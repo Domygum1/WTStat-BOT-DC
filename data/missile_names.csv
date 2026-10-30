@@ -1,0 +1,515 @@
+﻿weapon_code,name,full_name,wiki_url,wiki_match,localization_key,updated_utc
+103mm_MILAN_rocket_launcher,MILAN,MILAN anti-tank guided missile,https://wiki.warthunder.com/collections/weapon/milan,collection_name,weapons/103mm_MILAN_rocket_launcher,2026-10-11T23:11:51+00:00
+103mm_milan_launcher_user_cannon,MILAN anti-tank guided missile,MILAN anti-tank guided missile,https://wiki.warthunder.com/collections/weapon/milan,collection_name,weapons/103mm_milan_launcher_user_cannon,2026-10-11T23:11:51+00:00
+110mm_Spike_freccia_rocket_launchr_user_cannon,Spike-LR II,Spike-LR II anti-tank guided missile,,,weapons/110mm_Spike_freccia_rocket_launchr_user_cannon,2026-10-11T23:11:51+00:00
+110mm_Spike_kf_41_rocket_launchr_user_cannon,Spike-LR II,Spike-LR II anti-tank guided missile,,,weapons/110mm_Spike_kf_41_rocket_launchr_user_cannon,2026-10-11T23:11:51+00:00
+110mm_exo_spike_sr_rocket_launcher,Spike anti-tank guided missile,Spike anti-tank guided missile,https://wiki.warthunder.com/collections/weapon/spike,collection_name,weapons/110mm_exo_spike_sr_rocket_launcher,2026-10-11T23:11:51+00:00
+110mm_mells_rocket_launchr_user_cannon,Spike-LR II,Spike-LR II anti-tank guided missile,,,weapons/110mm_mells_rocket_launchr_user_cannon,2026-10-11T23:11:51+00:00
+110mm_spike_lr2,Spike-LR II,Spike-LR II anti-tank guided missile,https://wiki.warthunder.com/unit/germ_schutzenpanzer_puma_vjtf,unit_armament,weapons/110mm_spike_lr2/short,2026-10-11T23:11:51+00:00
+115mm_MILAN_2_rocket_launcher,MILAN 2,MILAN 2 anti-tank guided missile,,,weapons/115mm_MILAN_2_rocket_launcher,2026-10-11T23:11:51+00:00
+120mm_302_atgm_rocket_launcher,302 anti-tank guided missile,302 Anti-tank Missile,,,weapons/120mm_302_atgm_rocket_launcher,2026-10-11T23:11:51+00:00
+120mm_type_64_mat_launcher_user_cannon,Type 64 MAT,Type 64 MAT anti-tank guided missile,,,weapons/120mm_type_64_mat_launcher_user_cannon,2026-10-11T23:11:51+00:00
+125mm_9M113_rocket_launcher,9M113,"9M113 ""Konkurs"" anti-tank guided missile",,,weapons/125mm_9M113_rocket_launcher,2026-10-11T23:11:51+00:00
+125mm_9M14_rocket_launcher,9M14,9M14 anti-tank guided missile,,,weapons/125mm_9M14_rocket_launcher,2026-10-11T23:11:51+00:00
+125mm_9m113_launcher_user_cannon,"9M113 ""Konkurs"" anti-tank guided missile","9M113 ""Konkurs"" anti-tank guided missile",,,weapons/125mm_9m113_launcher_user_cannon,2026-10-11T23:11:51+00:00
+127mm_BGM_71_tow_M3A3_launcher_user_cannon,BGM-71 TOW anti-tank guided missile,BGM-71 TOW anti-tank guided missile,,,weapons/127mm_BGM_71_tow_M3A3_launcher_user_cannon,2026-10-11T23:11:51+00:00
+127mm_BGM_71_tow_Wiesel_launcher_user_cannon,BGM-71 TOW anti-tank guided missile,BGM-71 TOW anti-tank guided missile,,,weapons/127mm_BGM_71_tow_Wiesel_launcher_user_cannon,2026-10-11T23:11:51+00:00
+127mm_BGM_71_tow_launcher_user_cannon,BGM-71 TOW anti-tank guided missile,BGM-71 TOW anti-tank guided missile,,,weapons/127mm_BGM_71_tow_launcher_user_cannon,2026-10-11T23:11:51+00:00
+127mm_Rbs_55_tow_UDES_launcher_user_cannon,Rbs 55 anti-tank guided missile,Rbs 55 anti-tank guided missile,,,weapons/127mm_Rbs_55_tow_UDES_launcher_user_cannon,2026-10-11T23:11:51+00:00
+127mm_Rbs_55_tow_launcher_user_cannon,Rbs 55 anti-tank guided missile,Rbs 55 anti-tank guided missile,,,weapons/127mm_Rbs_55_tow_launcher_user_cannon,2026-10-11T23:11:51+00:00
+127mm_Rbs_55_tow_rocket_launcher,Rbs 55,Rbs 55 anti-tank guided missile,,,weapons/127mm_Rbs_55_tow_rocket_launcher,2026-10-11T23:11:51+00:00
+127mm_TOW_rocket_launcher,BGM-71 TOW,BGM-71A TOW anti-tank guided missile,,,weapons/127mm_TOW_rocket_launcher,2026-10-11T23:11:51+00:00
+127mm_ZT_3_launcher_user_cannon,ZT3 anti-tank guided missile,ZT3 anti-tank guided missile,,,weapons/127mm_ZT_3_launcher_user_cannon,2026-10-11T23:11:51+00:00
+127mm_bgm_71_tow_begleitpanzer_launcher_user_cannon,BGM-71 TOW anti-tank guided missile,BGM-71 TOW anti-tank guided missile,,,weapons/127mm_bgm_71_tow_begleitpanzer_launcher_user_cannon,2026-10-11T23:11:51+00:00
+127mm_bgm_71b_tow_rocket_launcher,BGM-71 TOW,BGM-71B TOW anti-tank guided missile,,,weapons/127mm_bgm_71b_tow_rocket_launcher,2026-10-11T23:11:51+00:00
+127mm_bgm_71c_itow_rocket_launcher,BGM-71C I-TOW,BGM-71C I-TOW anti-tank guided missile,,,weapons/127mm_bgm_71c_itow_rocket_launcher,2026-10-11T23:11:51+00:00
+127mm_bgm_71c_itow_rocket_launchr_user_cannon,BGM-71C I-TOW,BGM-71C I-TOW anti-tank guided missile,,,weapons/127mm_bgm_71c_itow_rocket_launchr_user_cannon,2026-10-11T23:11:51+00:00
+127mm_iTOW_launcher_user_cannon,BGM-71C I-TOW anti-tank guided missile,BGM-71C I-TOW anti-tank guided missile,,,weapons/127mm_iTOW_launcher_user_cannon,2026-10-11T23:11:51+00:00
+130mm_9M114_launcher_user_cannon,9M114 anti-tank guided missile,9M114 anti-tank guided missile,,,weapons/130mm_9M114_launcher_user_cannon,2026-10-11T23:11:51+00:00
+130mm_9M120_BMPT_launcher_user_cannon,9M120 anti-tank guided missile,9M120 anti-tank guided missile,,,weapons/130mm_9M120_BMPT_launcher_user_cannon,2026-10-11T23:11:51+00:00
+130mm_barrier_launcher_user_cannon,Barrier anti-tank guided missile,Barrier anti-tank guided missile,,,weapons/130mm_barrier_launcher_user_cannon,2026-10-11T23:11:51+00:00
+130mm_exo_9M115M_rocket_launcher,9M115M anti-tank guided missile,9M115M anti-tank guided missile,,,weapons/130mm_exo_9M115M_rocket_launcher,2026-10-11T23:11:51+00:00
+136mm_HOT_rocket_launcher,HOT,HOT anti-tank guided missile,,,weapons/136mm_HOT_rocket_launcher,2026-10-11T23:11:51+00:00
+136mm_k3s_hot_launcher_user_cannon,HOT-K3S anti-tank guided missile,HOT-K3S anti-tank guided missile,,,weapons/136mm_k3s_hot_launcher_user_cannon,2026-10-11T23:11:51+00:00
+136mm_k3s_hot_rocket_launcher,HOT-K3S,HOT-K3S anti-tank guided missile,,,weapons/136mm_k3s_hot_rocket_launcher,2026-10-11T23:11:51+00:00
+136mm_mephisto_launcher_user_cannon,HOT anti-tank guided missile,HOT anti-tank guided missile,,,weapons/136mm_mephisto_launcher_user_cannon,2026-10-11T23:11:51+00:00
+140mm_akeron_mp_rocket_launchr_user_cannon,Akeron MP,Akeron MP anti-tank guided missile,,,weapons/140mm_akeron_mp_rocket_launchr_user_cannon,2026-10-11T23:11:51+00:00
+150mm_Rbs_56_BILL_Pbv_launcher_user_cannon,Rbs 56 anti-tank guided missile,Rbs 56 anti-tank guided missile,,,weapons/150mm_Rbs_56_BILL_Pbv_launcher_user_cannon,2026-10-11T23:11:51+00:00
+150mm_Rbs_56_BILL_launcher_user_cannon,Rbs 56 anti-tank guided missile,Rbs 56 anti-tank guided missile,,,weapons/150mm_Rbs_56_BILL_launcher_user_cannon,2026-10-11T23:11:51+00:00
+152mm_19M220_rocket_launcher,152 mm 19M220 missile,152 mm 19M220 missile,,,weapons/152mm_19M220_rocket_launcher,2026-10-11T23:11:51+00:00
+152mm_9M123_launcher_user_cannon,9M123 anti-tank guided missile,9M123 anti-tank guided missile,,,weapons/152mm_9M123_launcher_user_cannon,2026-10-11T23:11:51+00:00
+152mm_9M133_btr_82at_launcher_user_cannon,9M133 anti-tank guided missile,9M133 anti-tank guided missile,,,weapons/152mm_9M133_btr_82at_launcher_user_cannon,2026-10-11T23:11:51+00:00
+152mm_9M133_launcher_user_cannon,9M133 anti-tank guided missile,9M133 anti-tank guided missile,,,weapons/152mm_9M133_launcher_user_cannon,2026-10-11T23:11:51+00:00
+152mm_Type_79_launcher_user_cannon,Type 79,Type 79 anti-tank guided missile,,,weapons/152mm_Type_79_launcher_user_cannon,2026-10-11T23:11:51+00:00
+152mm_exo_9M133_launcher_user_cannon,9M133 anti-tank guided missile,9M133 anti-tank guided missile,,,weapons/152mm_exo_9M133_launcher_user_cannon,2026-10-11T23:11:51+00:00
+152mm_exo_BGM_71_tow_launcher_user_cannon,BGM-71 TOW anti-tank guided missile,BGM-71 TOW anti-tank guided missile,,,weapons/152mm_exo_BGM_71_tow_launcher_user_cannon,2026-10-11T23:11:51+00:00
+152mm_hj_9_launcher_user_cannon,HJ-9 anti-tank guided missile,HJ-9 anti-tank guided missile,,,weapons/152mm_hj_9_launcher_user_cannon,2026-10-11T23:11:51+00:00
+152mm_type_79_rocket_launcher,Type 79,Type 79 anti-tank guided missile,,,weapons/152mm_type_79_rocket_launcher,2026-10-11T23:11:51+00:00
+162mm_MGM166_launcher_user_cannon,LOSAT/MGM-166 anti-tank guided missile,LOSAT/MGM-166 anti-tank guided missile,,,weapons/162mm_MGM166_launcher_user_cannon,2026-10-11T23:11:51+00:00
+164mm_lfk_ss11_rocket_launcher,LFK SS.11,LFK SS.11 anti-tank guided missile,,,weapons/164mm_lfk_ss11_rocket_launcher,2026-10-11T23:11:51+00:00
+164mm_lfk_ss11_rocket_launcher_user_cannon,SS.11 anti-tank guided missile,SS.11 anti-tank guided missile,https://wiki.warthunder.com/collections/weapon/ss11,collection_name,weapons/164mm_lfk_ss11_rocket_launcher_user_cannon,2026-10-11T23:11:51+00:00
+164mm_nord_s11_rocket_launcher,SS.11,SS.11 anti-tank guided missile,https://wiki.warthunder.com/collections/weapon/ss11,collection_name,weapons/164mm_nord_s11_rocket_launcher,2026-10-11T23:11:51+00:00
+164mm_s11_rocket_launcher,RB 52 A,Robot 52 (SS.11) anti-tank guided missile,,,weapons/164mm_s11_rocket_launcher,2026-10-11T23:11:51+00:00
+165mm_vt_1,VT1,VT1 SAM,https://wiki.warthunder.com/unit/sw_crotale_ng,unit_armament,weapons/165mm_vt_1/short,2026-10-11T23:11:51+00:00
+166mm_camm,CAMM,CAMM AAM,https://wiki.warthunder.com/unit/uk_sky_sabre_launcher,unit_armament,166mm_camm,2026-10-11T23:11:51+00:00
+170mm_57e6m,95Ya6M,2 x AAM 95Ya6M,https://wiki.warthunder.com/unit/ussr_pantsyr_sm_sv,unit_armament,170mm_57e6m,2026-10-11T23:11:51+00:00
+170mm_BAe_Swingfire_launcher_user_cannon,BAe Swingfire anti-tank guided missile,BAe Swingfire anti-tank guided missile,,,weapons/170mm_BAe_Swingfire_launcher_user_cannon,2026-10-11T23:11:51+00:00
+170mm_bae_swingfire_fv102_rocket_launcher,BAe Swingfire,BAe Swingfire anti-tank guided missile,,,weapons/170mm_bae_swingfire_fv102_rocket_launcher,2026-10-11T23:11:51+00:00
+170mm_bae_swingfire_fv438_launcher_user_cannon,BAe Swingfire anti-tank guided missile,BAe Swingfire anti-tank guided missile,,,weapons/170mm_bae_swingfire_fv438_launcher_user_cannon,2026-10-11T23:11:51+00:00
+170mm_bae_swingfire_rocket_launcher,BAe Swingfire,BAe Swingfire anti-tank guided missile,,,weapons/170mm_bae_swingfire_rocket_launcher,2026-10-11T23:11:51+00:00
+170mm_zur_95ya6,95Ya6,AAM 95Ya6,https://wiki.warthunder.com/unit/ussr_pantsyr_s1,unit_armament,170mm_zur_95ya6,2026-10-11T23:11:51+00:00
+180mm_2k4_launcher_user_cannon,3M7 anti-tank guided missile,3M7 anti-tank guided missile,,,weapons/180mm_2k4_launcher_user_cannon,2026-10-11T23:11:51+00:00
+180mm_2k4_rocket_launcher,3M7,3M7 anti-tank guided missile,,,weapons/180mm_2k4_rocket_launcher,2026-10-11T23:11:51+00:00
+ar_pescador,Pescador,Pescador air-to-ground missiles,,,weapons/ar_pescador,2026-10-11T23:11:51+00:00
+atam_mistral,Mistral,Mistral air-to-air missiles,https://wiki.warthunder.com/collections/weapon/mistral,collection_name,weapons/atam_mistral,2026-10-11T23:11:51+00:00
+atam_mistral_a129,Mistral,Mistral air-to-air missiles,https://wiki.warthunder.com/collections/weapon/mistral,collection_name,weapons/atam_mistral_a129,2026-10-11T23:11:51+00:00
+atam_mistral_sam,Mistral surface-to-air missiles,Mistral surface-to-air missiles,https://wiki.warthunder.com/collections/weapon/mistral,collection_name,weapons/atam_mistral_sam,2026-10-11T23:11:51+00:00
+br_maa_1,MAA-1,MAA-1 Piranha air-to-air missiles,,,weapons/br_maa_1,2026-10-11T23:11:51+00:00
+br_maa_1_default,MAA-1,MAA-1 Piranha air-to-air missiles,,,weapons/br_maa_1_default,2026-10-11T23:11:51+00:00
+ch_kd_88_missile_ir,KD-88A,KD-88A air-to-ground missiles,,,weapons/ch_kd_88_missile_ir,2026-10-11T23:11:51+00:00
+ch_kd_88_missile_tv,KD-88,KD-88 air-to-ground missiles,https://wiki.warthunder.com/collections/weapon/kd_88,collection_name,weapons/ch_kd_88_missile_tv,2026-10-11T23:11:51+00:00
+ch_yj_83k_missile,YJ-83K,YJ-83K anti-ship missile,,,weapons/ch_yj_83k_missile,2026-10-11T23:11:51+00:00
+cn_akd_10,AKD-10,AKD-10 air-to-ground missiles,https://wiki.warthunder.com/collections/weapon/akd_10,collection_name,weapons/cn_akd_10,2026-10-11T23:11:51+00:00
+cn_akd_9,AKD-9,AKD-9 air-to-ground missiles,,,weapons/cn_akd_9,2026-10-11T23:11:51+00:00
+cn_akd_9_default,AKD-9,AKD-9 air-to-ground missiles,,,weapons/cn_akd_9_default,2026-10-11T23:11:51+00:00
+cn_ba_11,BA-11A,Blue Arrow 11 air-to-ground missiles,https://wiki.warthunder.com/unit/z_10me,unit_mod_id,weapons/cn_ba_11,2026-10-11T23:11:51+00:00
+cn_ba_9,BA-9,Blue Arrow 9 air-to-ground missiles,,,weapons/cn_ba_9,2026-10-11T23:11:51+00:00
+cn_cm_102,CM-102,CM-102 anti-radiation missiles,https://wiki.warthunder.com/collections/weapon/cm_102,collection_name,weapons/cn_cm_102,2026-10-11T23:11:51+00:00
+cn_cm_502kg_he,CM-502KG,CM-502KG air-to-ground missiles,,,weapons/cn_cm_502kg_he,2026-10-11T23:11:51+00:00
+cn_cm_502kg_he_rail,CM-502KG,CM-502KG air-to-ground missiles,,,weapons/cn_cm_502kg_he_rail,2026-10-11T23:11:51+00:00
+cn_fire_snake_70a,FS 70A,Fire Snake 70A missiles,,,weapons/cn_fire_snake_70a,2026-10-11T23:11:51+00:00
+cn_fire_snake_90a_brm1,BRM1,Fire Snake 90A missiles,,,weapons/cn_fire_snake_90a_brm1,2026-10-11T23:11:51+00:00
+cn_hj_8a,HJ-8A,HJ-8A missiles,,,weapons/cn_hj_8a,2026-10-11T23:11:51+00:00
+cn_hj_8c,HJ-8C,HJ-8C missiles,,,weapons/cn_hj_8c,2026-10-11T23:11:51+00:00
+cn_hj_8e,HJ-8E,HJ-8E missiles,,,weapons/cn_hj_8e,2026-10-11T23:11:51+00:00
+cn_hj_8e_default,HJ-8E,HJ-8E missiles,,,weapons/cn_hj_8e_default,2026-10-11T23:11:51+00:00
+cn_hj_8h,HJ-8H,HJ-8H missiles,,,weapons/cn_hj_8h,2026-10-11T23:11:51+00:00
+cn_hj_8l,HJ-8L,HJ-8L missiles,,,weapons/cn_hj_8l,2026-10-11T23:11:51+00:00
+cn_hj_9,HJ-9,HJ-9 missiles,,,weapons/cn_hj_9,2026-10-11T23:11:51+00:00
+cn_ld10,LD-10,LD-10 anti-radiation missiles,https://wiki.warthunder.com/collections/weapon/ld_10,collection_name,weapons/cn_ld10,2026-10-11T23:11:51+00:00
+cn_pl11,PL-11,PL-11 air-to-air missiles,,,weapons/cn_pl11,2026-10-11T23:11:51+00:00
+cn_pl12,PL-12,PL-12 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/pl_12,collection_name,weapons/cn_pl12,2026-10-11T23:11:51+00:00
+cn_pl12_default,PL-12,PL-12 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/pl_12,collection_name,weapons/cn_pl12_default,2026-10-11T23:11:51+00:00
+cn_pl12a,PL-12A,PL-12A air-to-air missiles,https://wiki.warthunder.com/unit/j_16,unit_mod_id,weapons/cn_pl12a,2026-10-11T23:11:51+00:00
+cn_pl12a_default,PL-12A,PL-12A air-to-air missiles,,,weapons/cn_pl12a_default,2026-10-11T23:11:51+00:00
+cn_pl15,PL-15,PL-15 air-to-air missiles,,,weapons/cn_pl15,2026-10-11T23:11:51+00:00
+cn_pl15_default,PL-15,PL-15 air-to-air missiles,,,weapons/cn_pl15_default,2026-10-11T23:11:51+00:00
+cn_pl8b,PL-8B,PL-8B air-to-air missiles,https://wiki.warthunder.com/unit/su_30mkk,unit_mod_id,weapons/cn_pl8b,2026-10-11T23:11:51+00:00
+cn_pl8b_default,PL-8B,PL-8B air-to-air missiles,https://wiki.warthunder.com/unit/su_30mkk,unit_mod_id,weapons/cn_pl8b_default,2026-10-11T23:11:51+00:00
+cn_sd10a,SD-10,SD-10(A) air-to-air missiles,https://wiki.warthunder.com/unit/jf_17,unit_display_name,weapons/cn_sd10a,2026-10-11T23:11:51+00:00
+cn_sd10a_default,SD-10,SD-10(A) air-to-air missiles,,,weapons/cn_sd10a_default,2026-10-11T23:11:51+00:00
+cn_ty_90,TY-90,TY-90 air-to-air missiles,,,weapons/cn_ty_90,2026-10-11T23:11:51+00:00
+cn_yj91_l_111,YJ-91 L111,YJ-91 L111 anti-radiation missiles,,,weapons/cn_yj91_l_111,2026-10-11T23:11:51+00:00
+cn_yj91_l_112,YJ-91 L112,YJ-91 L112 anti-radiation missiles,,,weapons/cn_yj91_l_112,2026-10-11T23:11:51+00:00
+cn_yj91_l_113,YJ-91 L113,YJ-91 L113 anti-radiation missiles,,,weapons/cn_yj91_l_113,2026-10-11T23:11:51+00:00
+cn_yj91a,YJ-91A,YJ-91A anti-radiation missiles,,,weapons/cn_yj91a,2026-10-11T23:11:51+00:00
+cn_yj91as,YJ-91,YJ-91 anti-ship missile,,,weapons/cn_yj91as,2026-10-11T23:11:51+00:00
+cn_yj_81k,YJ-81(k),YJ-81(k) anti-ship missile,,,weapons/cn_yj_81k,2026-10-11T23:11:51+00:00
+combat_track_missile_launcher,Red spear,Red spear anti-tank guided missile,,,weapons/combat_track_missile_launcher,2026-10-11T23:11:51+00:00
+de_x4_ruhrstahl,X-4,Ruhrstahl X-4 air-to-air missiles,,,weapons/de_x4_ruhrstahl,2026-10-11T23:11:51+00:00
+dra_lau_105a_aim_9l_lm,AIM-9L,AIM-9L Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9l_sidewinder,collection_name,weapons/dra_lau_105a_aim_9l_lm,2026-10-11T23:11:51+00:00
+dra_lau_105a_aim_9l_rm,AIM-9L,AIM-9L Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9l_sidewinder,collection_name,weapons/dra_lau_105a_aim_9l_rm,2026-10-11T23:11:51+00:00
+euro_atgw3,PARS 3 LR,PARS 3 LR air-to-ground missiles,,,weapons/euro_atgw3,2026-10-11T23:11:51+00:00
+euro_hot,HOT-1,HOT-1 missiles,,,weapons/euro_hot,2026-10-11T23:11:51+00:00
+euro_hot2,HOT-2,HOT-2 TOW missiles,,,weapons/euro_hot2,2026-10-11T23:11:51+00:00
+euro_hot3,HOT-3,HOT-3 air-to-ground missiles,,,weapons/euro_hot3,2026-10-11T23:11:51+00:00
+euro_hot_default,HOT-1,HOT-1 missiles,,,weapons/euro_hot_default,2026-10-11T23:11:51+00:00
+euro_trigat_lr,TRIGAT-LR,TRIGAT-LR air-to-ground missiles,,,weapons/euro_trigat_lr,2026-10-11T23:11:51+00:00
+fk_2000_rocket,FK-2000,FK-2000 SAM,https://wiki.warthunder.com/unit/cn_fk_2000,unit_armament,fk_2000_rocket,2026-10-11T23:11:51+00:00
+fr_aa20,AA-20 Nord,AA-20 Nord air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aa_20,collection_name,weapons/fr_aa20,2026-10-11T23:11:51+00:00
+fr_aj_168,AJ.168,AJ.168 air-to-ground missiles,,,weapons/fr_aj_168,2026-10-11T23:11:51+00:00
+fr_as20,AS-20 Nord,AS-20 Nord air-to-ground missiles,https://wiki.warthunder.com/collections/weapon/as_20,collection_name,weapons/fr_as20,2026-10-11T23:11:51+00:00
+fr_as30,AS-30 Nord,AS-30 Nord air-to-ground missiles,https://wiki.warthunder.com/collections/weapon/as_30,collection_name,weapons/fr_as30,2026-10-11T23:11:51+00:00
+fr_as30_switzerland,Flz Lwf LB 66,Flz Lwf LB 66 air-to-ground missiles,,,weapons/fr_as30_switzerland,2026-10-11T23:11:51+00:00
+fr_as30l,AS-30L Nord,AS-30L Nord air-to-ground missiles,,,weapons/fr_as30l,2026-10-11T23:11:51+00:00
+fr_as37_armat,AS-37 ARMAT,AS-37 ARMAT anti-radiation missiles,,,weapons/fr_as37_armat,2026-10-11T23:11:51+00:00
+fr_as37_c_band,AS-37 C,AS-37 C Martel anti-radiation missiles,,,weapons/fr_as37_c_band,2026-10-11T23:11:51+00:00
+fr_as37_l_band,AS-37 L,AS-37 L Martel anti-radiation missiles,,,weapons/fr_as37_l_band,2026-10-11T23:11:51+00:00
+fr_as37_s_band,AS-37 S,AS-37 S Martel anti-radiation missiles,,,weapons/fr_as37_s_band,2026-10-11T23:11:51+00:00
+fr_exocet_am39_block_2,AM39,Exocet AM39 Block 2 anti-ship missile,,,weapons/fr_exocet_am39_block_2,2026-10-11T23:11:51+00:00
+fr_fz275_lgr,FZ275,FZ275 LGR air-to-ground missiles,,,weapons/fr_fz275_lgr,2026-10-11T23:11:51+00:00
+fr_matra_super_530d,Matra Super 530D,Matra Super 530D air-to-air missiles,,,weapons/fr_matra_super_530d,2026-10-11T23:11:51+00:00
+fr_matra_super_530d_default,Matra Super 530D,Matra Super 530D air-to-air missiles,,,weapons/fr_matra_super_530d_default,2026-10-11T23:11:51+00:00
+fr_matra_super_530f,Matra Super 530F,Matra Super 530F air-to-air missiles,,,weapons/fr_matra_super_530f,2026-10-11T23:11:51+00:00
+fr_matra_super_530f_default,Matra Super 530F,Matra Super 530F air-to-air missiles,,,weapons/fr_matra_super_530f_default,2026-10-11T23:11:51+00:00
+fr_matra_super_530f_mirage_2000,Matra Super 530F,Matra Super 530F air-to-air missiles,,,weapons/fr_matra_super_530f_mirage_2000,2026-10-11T23:11:51+00:00
+fr_matra_super_530f_mirage_2000_default,Matra Super 530F,Matra Super 530F air-to-air missiles,,,weapons/fr_matra_super_530f_mirage_2000_default,2026-10-11T23:11:51+00:00
+fr_mica_em,MICA-EM,MICA-EM air-to-air missiles,https://wiki.warthunder.com/unit/mirage_2000_5f,unit_mod_id,weapons/fr_mica_em,2026-10-11T23:11:51+00:00
+fr_mica_em_default,MICA-EM,MICA-EM air-to-air missiles,https://wiki.warthunder.com/unit/mirage_2000_5f,unit_mod_id,weapons/fr_mica_em_default,2026-10-11T23:11:51+00:00
+fr_r_511_matra,Matra R511,Matra R511 air-to-air missiles,,,weapons/fr_r_511_matra,2026-10-11T23:11:51+00:00
+fr_r_530_matra_ir,Matra R530E,Matra R530E air-to-air missiles,,,weapons/fr_r_530_matra_ir,2026-10-11T23:11:51+00:00
+fr_r_530_matra_radar,Matra R530,Matra R530 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r530,collection_name,weapons/fr_r_530_matra_radar,2026-10-11T23:11:51+00:00
+fr_r_550_magic,Matra R550 Magic 1,Matra R550 Magic 1 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r550_magic_1,collection_name,weapons/fr_r_550_magic,2026-10-11T23:11:51+00:00
+fr_r_550_magic_2,Matra R550 Magic 2,Matra R550 Magic 2 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r550_magic_2,collection_name,weapons/fr_r_550_magic_2,2026-10-11T23:11:51+00:00
+fr_r_550_magic_2_default,Matra R550 Magic 2,Matra R550 Magic 2 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r550_magic_2,collection_name,weapons/fr_r_550_magic_2_default,2026-10-11T23:11:51+00:00
+fr_ss_11,AS.11,AS.11 missiles,,,weapons/fr_ss_11,2026-10-11T23:11:51+00:00
+fr_ss_12,AS.12,AS.12 missiles,,,weapons/fr_ss_12,2026-10-11T23:11:51+00:00
+gr_as34_kormoran,AS.34,AS.34 Kormoran anti-ship missile,,,weapons/gr_as34_kormoran,2026-10-11T23:11:51+00:00
+gr_as34_kormoran_mk_2,AS.34 II,AS.34 Kormoran II anti-ship missile,,,weapons/gr_as34_kormoran_mk_2,2026-10-11T23:11:51+00:00
+il_derby,Derby,Derby air-to-air missiles,https://wiki.warthunder.com/unit/f_16d_block_40_barak_2,unit_mod_id,weapons/il_derby,2026-10-11T23:11:51+00:00
+il_derby_default,Derby,Derby air-to-air missiles,https://wiki.warthunder.com/unit/f_16d_block_40_barak_2,unit_mod_id,weapons/il_derby_default,2026-10-11T23:11:51+00:00
+il_derby_er_sam,I-Derby ER,I-Derby ER surface-to-air missiles,,,weapons/il_derby_er_sam,2026-10-11T23:11:51+00:00
+il_derby_sam,I-Derby SR,I-Derby SR surface-to-air missiles,,,weapons/il_derby_sam,2026-10-11T23:11:51+00:00
+il_gatr,GATR,GATR missiles,,,weapons/il_gatr,2026-10-11T23:11:51+00:00
+il_python_5_sam,Python 5,Python 5 air-to-air missiles,,,weapons/il_python_5_sam,2026-10-11T23:11:51+00:00
+il_pyton_3,Python 3,Python 3 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/python_3,collection_name,weapons/il_pyton_3,2026-10-11T23:11:51+00:00
+il_pyton_3_default,Python 3,Python 3 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/python_3,collection_name,weapons/il_pyton_3_default,2026-10-11T23:11:51+00:00
+il_pyton_4,Python 4,Python 4 air-to-air missiles,,,weapons/il_pyton_4,2026-10-11T23:11:51+00:00
+il_shafrir_1,Shafrir,Shafrir air-to-air missiles,,,weapons/il_shafrir_1,2026-10-11T23:11:51+00:00
+il_shafrir_2,Shafrir 2,Shafrir 2 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/shafrir_2,collection_name,weapons/il_shafrir_2,2026-10-11T23:11:51+00:00
+il_shafrir_2_default,Shafrir 2,Shafrir 2 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/shafrir_2,collection_name,weapons/il_shafrir_2_default,2026-10-11T23:11:51+00:00
+ir_fakour_90,Fakour-90,Fakour-90 air-to-air missiles,https://wiki.warthunder.com/unit/f_14a_iriaf,unit_mod_id,weapons/ir_fakour_90,2026-10-11T23:11:51+00:00
+ir_sedjil,Sedjeel,Sedjeel air-to-air missiles,,,weapons/ir_sedjil,2026-10-11T23:11:51+00:00
+is_delilah,Delilah,Delilah missiles,,,weapons/is_delilah,2026-10-11T23:11:51+00:00
+is_delilah_arm,Delilah (ARM),Delilah (ARM) missiles,,,weapons/is_delilah_arm,2026-10-11T23:11:51+00:00
+is_delilah_ir,Delilah (IR),Delilah (IR) missiles,,,weapons/is_delilah_ir,2026-10-11T23:11:51+00:00
+it_aspide_1a,Aspide-1A,Aspide-1A air-to-air missiles,,,weapons/it_aspide_1a,2026-10-11T23:11:51+00:00
+jp_aam3,AAM-3,AAM-3 air-to-air missiles,,,weapons/jp_aam3,2026-10-11T23:11:51+00:00
+jp_aam3_default,AAM-3,AAM-3 air-to-air missiles,,,weapons/jp_aam3_default,2026-10-11T23:11:51+00:00
+jp_aam4,AAM-4,AAM-4 air-to-air missiles,https://wiki.warthunder.com/unit/f_15j_kai,unit_mod_id,weapons/jp_aam4,2026-10-11T23:11:51+00:00
+jp_aam4_default,AAM-4,AAM-4 air-to-air missiles,,,weapons/jp_aam4_default,2026-10-11T23:11:51+00:00
+jp_asm1,ASM-1,ASM-1 anti-ship missile,,,weapons/jp_asm1,2026-10-11T23:11:51+00:00
+jp_asm2,ASM-2,ASM-2 anti-ship missile,,,weapons/jp_asm2,2026-10-11T23:11:51+00:00
+jp_asm3,ASM-3,ASM-3 anti-ship missile,,,weapons/jp_asm3,2026-10-11T23:11:51+00:00
+jp_ki_148_i_go_1b,Ki-148 I-Go 1B,Ki-148 I-Go Model 1B missile,,,weapons/jp_ki_148_i_go_1b,2026-10-11T23:11:51+00:00
+r_darter,R-Darter,R-Darter air-to-air missiles,,,weapons/r_darter,2026-10-11T23:11:51+00:00
+r_darter_default,R-Darter,R-Darter air-to-air missiles,,,weapons/r_darter_default,2026-10-11T23:11:51+00:00
+ro_a91,A-91,A-91 air-to-air missiles,,,weapons/ro_a91,2026-10-11T23:11:51+00:00
+ro_a91_default,A-91,A-91 air-to-air missiles,,,weapons/ro_a91_default,2026-10-11T23:11:51+00:00
+rocket_5v24_v600p_naval_rocket_launcher,Volna-M,379 mm Volna-M missile launcher,,,weapons/rocket_5v24_v600p_naval_rocket_launcher,2026-10-11T23:11:51+00:00
+rocket_9m33_naval_rocket_launcher,OSA-M,209 mm OSA-M missile launcher,,,weapons/rocket_9m33_naval_rocket_launcher,2026-10-11T23:11:51+00:00
+rocket_mk11_naval_rocket_launcher,Mk.11,Mk.11 missile launcher,,,weapons/rocket_mk11_naval_rocket_launcher,2026-10-11T23:11:51+00:00
+rocket_mk13_naval_rocket_launcher,Mk.13,Mk.13 missile launcher,,,weapons/rocket_mk13_naval_rocket_launcher,2026-10-11T23:11:51+00:00
+rocket_nettuno_mk1_naval_rocket_launcher,Nettuno,8.1 inch Nettuno anti-ship missile launcher,,,weapons/rocket_nettuno_mk1_naval_rocket_launcher,2026-10-11T23:11:51+00:00
+rocket_rim_24_a_naval_rocket_launcher,RIM-24A,343 mm RIM-24A missile launcher,,,weapons/rocket_rim_24_a_naval_rocket_launcher,2026-10-11T23:11:51+00:00
+rocket_rocket_3m14k_kalibr_launcher,AShM Kalibr,Kalibr anti-ship and land attack cruise missile,,,weapons/rocket_rocket_3m14k_kalibr_launcher,2026-10-11T23:11:51+00:00
+rocket_ss11_naval_rocket_launcher,SS.11 missile launcher,SS.11 missile launcher,,,weapons/rocket_ss11_naval_rocket_launcher,2026-10-11T23:11:51+00:00
+rocket_tomahawk_bgm109_launcher,TLAM Tomahawk,Tomahawk land attack missile,,,weapons/rocket_tomahawk_bgm109_launcher,2026-10-11T23:11:51+00:00
+rocket_ugm133_trident2_launcher,SLBM Trident,Trident submarine-launched ballistic missile,,,weapons/rocket_ugm133_trident2_launcher,2026-10-11T23:11:51+00:00
+rs_e_24_a1,E-24-A1,E-24-A1 air-to-ground missile,,,weapons/rs_e_24_a1,2026-10-11T23:11:51+00:00
+rs_grom,GROM,GROM air-to-ground missile,,,weapons/rs_grom,2026-10-11T23:11:51+00:00
+rs_grom_b,GROM-B,GROM-B air-to-ground missile,,,weapons/rs_grom_b,2026-10-11T23:11:51+00:00
+rs_kosava_3_tm,Kosava 3 TM,Kosava 3 TM air-to-ground missile,,,weapons/rs_kosava_3_tm,2026-10-11T23:11:51+00:00
+rs_salgr_m_16d,M-16D,SALGR M-16D missiles,,,weapons/rs_salgr_m_16d,2026-10-11T23:11:51+00:00
+rs_vrvz_240,VRVZ-240,VRVZ-240 air-to-ground missile,,,weapons/rs_vrvz_240,2026-10-11T23:11:51+00:00
+sa_zt_35_ingwe,ZT3A2 Ingwe,ZT3A2 Ingwe air-to-ground missiles,,,weapons/sa_zt_35_ingwe,2026-10-11T23:11:51+00:00
+sa_zt_35_ingwe_default,ZT3A2 Ingwe,ZT3A2 Ingwe air-to-ground missiles,,,weapons/sa_zt_35_ingwe_default,2026-10-11T23:11:51+00:00
+spike_er,Spike ER,Spike ER air-to-ground missiles,,,weapons/spike_er,2026-10-11T23:11:51+00:00
+spike_er_default,Spike ER,Spike ER air-to-ground missiles,,,weapons/spike_er_default,2026-10-11T23:11:51+00:00
+spike_nlos,Spike NLOS,Spike NLOS air-to-ground missiles,,,weapons/spike_nlos,2026-10-11T23:11:51+00:00
+spike_nlos_default,Spike NLOS,Spike NLOS air-to-ground missiles,,,weapons/spike_nlos_default,2026-10-11T23:11:51+00:00
+su_9M114,9M114,9M114 Shturm missiles,https://wiki.warthunder.com/collections/weapon/9m114_shturm,collection_name,weapons/su_9M114,2026-10-11T23:11:51+00:00
+su_9M114_default,9M114,9M114 Shturm missiles,https://wiki.warthunder.com/collections/weapon/9m114_shturm,collection_name,weapons/su_9M114_default,2026-10-11T23:11:51+00:00
+su_9M120,9M120,9M120 Ataka missiles,,,weapons/su_9M120,2026-10-11T23:11:51+00:00
+su_9M120M,9M120,9M120 Ataka missiles,,,weapons/su_9M120M,2026-10-11T23:11:51+00:00
+su_9M120M_laser_guided,9M120-1,9M120-1 Ataka missiles,,,weapons/su_9M120M_laser_guided,2026-10-11T23:11:51+00:00
+su_9M120M_laser_guided_default,9M120-1,9M120-1 Ataka missiles,,,weapons/su_9M120M_laser_guided_default,2026-10-11T23:11:51+00:00
+su_9M123,9M123M,9M123M Khrizantema-VM missiles,,,weapons/su_9M123,2026-10-11T23:11:51+00:00
+su_9M127,9K127 Vikhr,9K127 Vikhr air-to-ground missiles,,,weapons/su_9M127,2026-10-11T23:11:51+00:00
+su_9M14-2,9M14-2,9M14-2 Malyutka-2 missiles,,,weapons/su_9M14-2,2026-10-11T23:11:51+00:00
+su_9M14M,9M14M,9M14M Malyutka missiles,,,weapons/su_9M14M,2026-10-11T23:11:51+00:00
+su_9M17M,9М17М Falanga,9М17М Falanga missiles,,,weapons/su_9M17M,2026-10-11T23:11:51+00:00
+su_9M17P,9M17P Falanga,9M17P Falanga-PV missiles,,,weapons/su_9M17P,2026-10-11T23:11:51+00:00
+su_9M336,9M336,9M336 Verba air-to-air missiles,,,weapons/su_9M336,2026-10-11T23:11:51+00:00
+su_9M39,9M39,9M39 Igla air-to-air missiles,https://wiki.warthunder.com/collections/weapon/9m39,collection_name,weapons/su_9M39,2026-10-11T23:11:51+00:00
+su_9m127_1,9K127 Vikhr,9K127 Vikhr air-to-ground missiles,,,weapons/su_9m127_1,2026-10-11T23:11:51+00:00
+su_9m133_kornet,9M133M-2,9M133M-2 anti-tank guided missile,,,weapons/su_9m133_kornet,2026-10-11T23:11:51+00:00
+su_9m133fm3_kornet,9M133FM3,9M133FM3 anti-tank guided missile,,,weapons/su_9m133fm3_kornet,2026-10-11T23:11:51+00:00
+su_9m14m_default,9M14M,9M14M Malyutka missiles,,,weapons/su_9m14m_default,2026-10-11T23:11:51+00:00
+su_9m17m_default,9М17М Falanga,9М17М Falanga missiles,,,weapons/su_9m17m_default,2026-10-11T23:11:51+00:00
+su_grom_1,Grom-1,Grom-1 missile,,,weapons/su_grom_1,2026-10-11T23:11:51+00:00
+su_kh_23m,Kh-23M,Kh-23M missiles,,,weapons/su_kh_23m,2026-10-11T23:11:51+00:00
+su_kh_25,Kh-25,Kh-25 missiles,https://wiki.warthunder.com/collections/weapon/kh25,collection_name,weapons/su_kh_25,2026-10-11T23:11:51+00:00
+su_kh_25_haslaserchannel,Kh-25,Kh-25 missiles,https://wiki.warthunder.com/collections/weapon/kh25,collection_name,weapons/su_kh_25_haslaserchannel,2026-10-11T23:11:51+00:00
+su_kh_25ml,Kh-25ML,Kh-25ML missiles,,,weapons/su_kh_25ml,2026-10-11T23:11:51+00:00
+su_kh_25mp,Kh-25MP,Kh-25MP anti-radiation missile,,,weapons/su_kh_25mp,2026-10-11T23:11:51+00:00
+su_kh_25mp_cw,Kh-25MP,Kh-25MP anti-radiation missile,,,weapons/su_kh_25mp_cw,2026-10-11T23:11:51+00:00
+su_kh_25mpu,Kh-25MPU,Kh-25MPU anti-radiation missile,,,weapons/su_kh_25mpu,2026-10-11T23:11:51+00:00
+su_kh_25mr,Kh-25MR,Kh-25MR missiles,,,weapons/su_kh_25mr,2026-10-11T23:11:51+00:00
+su_kh_27ps,Kh-27PS,Kh-27PS anti-radiation missile,,,weapons/su_kh_27ps,2026-10-11T23:11:51+00:00
+su_kh_27ps_cw,Kh-27PS,Kh-27PS anti-radiation missile,,,weapons/su_kh_27ps_cw,2026-10-11T23:11:51+00:00
+su_kh_29l,Kh-29L,Kh-29L missiles,,,weapons/su_kh_29l,2026-10-11T23:11:51+00:00
+su_kh_29l_notlaserchannel,Kh-29L,Kh-29L missiles,,,weapons/su_kh_29l_notlaserchannel,2026-10-11T23:11:51+00:00
+su_kh_29t,Kh-29T,Kh-29T missiles,,,weapons/su_kh_29t,2026-10-11T23:11:51+00:00
+su_kh_29td,Kh-29TD,Kh-29TD missiles,,,weapons/su_kh_29td,2026-10-11T23:11:51+00:00
+su_kh_29te,Kh-29TE,Kh-29TE missiles,https://wiki.warthunder.com/unit/j_16,unit_display_name,weapons/su_kh_29te,2026-10-11T23:11:51+00:00
+su_kh_31a,Kh-31A,Kh-31A anti-ship missile,https://wiki.warthunder.com/collections/weapon/kh_31a,collection_name,weapons/su_kh_31a,2026-10-11T23:11:51+00:00
+su_kh_31ad,Kh-31AD,Kh-31AD anti-ship missile,,,weapons/su_kh_31ad,2026-10-11T23:11:51+00:00
+su_kh_31p_l_111,Kh-31P L-111,Kh-31P L-111 anti-radiation missile,,,weapons/su_kh_31p_l_111,2026-10-11T23:11:51+00:00
+su_kh_31p_l_112,Kh-31P L-112,Kh-31P L-112 anti-radiation missile,,,weapons/su_kh_31p_l_112,2026-10-11T23:11:51+00:00
+su_kh_31p_l_113,Kh-31P L-113,Kh-31P L-113 anti-radiation missile,,,weapons/su_kh_31p_l_113,2026-10-11T23:11:51+00:00
+su_kh_31pd,Kh-31PD,Kh-31PD anti-radiation missile,,,weapons/su_kh_31pd,2026-10-11T23:11:51+00:00
+su_kh_35u,Kh-35U,Kh-35U anti-ship missile,,,weapons/su_kh_35u,2026-10-11T23:11:51+00:00
+su_kh_35ue,Kh-35UE,Kh-35UE anti-ship missile,,,weapons/su_kh_35ue,2026-10-11T23:11:51+00:00
+su_kh_38ml,Kh-38ML,Kh-38ML missiles,,,weapons/su_kh_38ml,2026-10-11T23:11:51+00:00
+su_kh_38mle,Kh-38MLE,Kh-38MLE missiles,,,weapons/su_kh_38mle,2026-10-11T23:11:51+00:00
+su_kh_38mt,Kh-38MT,Kh-38MT missiles,https://wiki.warthunder.com/unit/su_30sm2,unit_display_name,weapons/su_kh_38mt,2026-10-11T23:11:51+00:00
+su_kh_38mte,Kh-38MTE,Kh-38MTE missiles,,,weapons/su_kh_38mte,2026-10-11T23:11:51+00:00
+su_kh_58u_a_band,Kh-58U A',Kh-58U A' anti-radiation missile,,,weapons/su_kh_58u_a_band,2026-10-11T23:11:51+00:00
+su_kh_58u_a_band_cw,Kh-58U A,Kh-58U A anti-radiation missile,,,weapons/su_kh_58u_a_band_cw,2026-10-11T23:11:51+00:00
+su_kh_58u_b_band,Kh-58U B,Kh-58U B anti-radiation missile,,,weapons/su_kh_58u_b_band,2026-10-11T23:11:51+00:00
+su_kh_58u_c_band,Kh-58U C,Kh-58U C anti-radiation missile,,,weapons/su_kh_58u_c_band,2026-10-11T23:11:51+00:00
+su_kh_58ush,Kh-58USh,Kh-58USh anti-radiation missile,,,weapons/su_kh_58ush,2026-10-11T23:11:51+00:00
+su_kh_58ushk,Kh-58UShK,Kh-58UShK anti-radiation missile,,,weapons/su_kh_58ushk,2026-10-11T23:11:51+00:00
+su_kh_58ushke,Kh-58UShKE,Kh-58UShKE anti-radiation missile,,,weapons/su_kh_58ushke,2026-10-11T23:11:51+00:00
+su_kh_59,Kh-59,Kh-59 missiles,https://wiki.warthunder.com/collections/weapon/kh_59,collection_name,weapons/su_kh_59,2026-10-11T23:11:51+00:00
+su_kh_59m,Kh-59M,Kh-59M missiles,,,weapons/su_kh_59m,2026-10-11T23:11:51+00:00
+su_kh_59me,Kh-59ME,Kh-59ME missiles,,,weapons/su_kh_59me,2026-10-11T23:11:51+00:00
+su_kh_59mk,Kh-59MK,Kh-59MK missiles,,,weapons/su_kh_59mk,2026-10-11T23:11:51+00:00
+su_kh_59mke,Kh-59MKE,Kh-59MKE missiles,,,weapons/su_kh_59mke,2026-10-11T23:11:51+00:00
+su_kh_66,Kh-66,Kh-66 missiles,,,weapons/su_kh_66,2026-10-11T23:11:51+00:00
+su_lmur,LMUR,"LMUR ""Izdeliye 305"" missiles",https://wiki.warthunder.com/unit/mi_28nm,unit_mod_id,weapons/su_lmur,2026-10-11T23:11:51+00:00
+su_pl2,PL-2,PL-2 air-to-air missiles,,,weapons/su_pl2,2026-10-11T23:11:51+00:00
+su_pl2_default,PL-2,PL-2 air-to-air missiles,,,weapons/su_pl2_default,2026-10-11T23:11:51+00:00
+su_pl5b,PL-5B,PL-5B air-to-air missiles,,,weapons/su_pl5b,2026-10-11T23:11:51+00:00
+su_pl5b_default,PL-5B,PL-5B air-to-air missiles,,,weapons/su_pl5b_default,2026-10-11T23:11:51+00:00
+su_pl5c,PL-5C,PL-5C air-to-air missiles,,,weapons/su_pl5c,2026-10-11T23:11:51+00:00
+su_pl5c_default,PL-5C,PL-5C air-to-air missiles,,,weapons/su_pl5c_default,2026-10-11T23:11:51+00:00
+su_pl5e2,PL-5EII,PL-5EII air-to-air missiles,https://wiki.warthunder.com/unit/j_10a,unit_display_name,weapons/su_pl5e2,2026-10-11T23:11:51+00:00
+su_pl5e2_default,PL-5EII,PL-5EII air-to-air missiles,https://wiki.warthunder.com/unit/jf_17,unit_display_name,weapons/su_pl5e2_default,2026-10-11T23:11:51+00:00
+su_pl7,PL-7,PL-7 air-to-air missiles,,,weapons/su_pl7,2026-10-11T23:11:51+00:00
+su_pl8,PL-8,PL-8 air-to-air missiles,,,weapons/su_pl8,2026-10-11T23:11:51+00:00
+su_pl8_default,PL-8,PL-8 air-to-air missiles,,,weapons/su_pl8_default,2026-10-11T23:11:51+00:00
+su_r_13m,R-13M,R-13M air-to-air missiles,,,weapons/su_r_13m,2026-10-11T23:11:51+00:00
+su_r_13m1,R-13M1,R-13M1 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r_13m1,collection_name,weapons/su_r_13m1,2026-10-11T23:11:51+00:00
+su_r_13m1_default,R-13M1,R-13M1 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r_13m1,collection_name,weapons/su_r_13m1_default,2026-10-11T23:11:51+00:00
+su_r_23r,R-23R,R-23R air-to-air missiles,,,weapons/su_r_23r,2026-10-11T23:11:51+00:00
+su_r_23t,R-23T,R-23T air-to-air missiles,,,weapons/su_r_23t,2026-10-11T23:11:51+00:00
+su_r_24r,R-24R,R-24R air-to-air missiles,,,weapons/su_r_24r,2026-10-11T23:11:51+00:00
+su_r_24t,R-24T,R-24T air-to-air missiles,,,weapons/su_r_24t,2026-10-11T23:11:51+00:00
+su_r_27er,R-27ER,R-27ER air-to-air missiles,https://wiki.warthunder.com/unit/su_30sm2,unit_display_name,weapons/su_r_27er,2026-10-11T23:11:51+00:00
+su_r_27er1,R-27ER1,R-27ER1 air-to-air missiles,https://wiki.warthunder.com/unit/su_30mkk,unit_display_name,weapons/su_r_27er1,2026-10-11T23:11:51+00:00
+su_r_27er_default,R-27ER,R-27ER air-to-air missiles,https://wiki.warthunder.com/unit/su_33,unit_display_name,weapons/su_r_27er_default,2026-10-11T23:11:51+00:00
+su_r_27et,R-27ET,R-27ET air-to-air missiles,https://wiki.warthunder.com/unit/su_30sm,unit_display_name,weapons/su_r_27et,2026-10-11T23:11:51+00:00
+su_r_27et1,R-27ET1,R-27ET1 air-to-air missiles,https://wiki.warthunder.com/unit/su_30mk2v_venezuela,unit_display_name,weapons/su_r_27et1,2026-10-11T23:11:51+00:00
+su_r_27r,R-27R,R-27R air-to-air missiles,,,weapons/su_r_27r,2026-10-11T23:11:51+00:00
+su_r_27r1,R-27R1,R-27R1 air-to-air missiles,,,weapons/su_r_27r1,2026-10-11T23:11:51+00:00
+su_r_27r1_default,R-27R1,R-27R1 air-to-air missiles,,,weapons/su_r_27r1_default,2026-10-11T23:11:51+00:00
+su_r_27r_default,R-27R,R-27R air-to-air missiles,,,weapons/su_r_27r_default,2026-10-11T23:11:51+00:00
+su_r_27t,R-27T,R-27T air-to-air missiles,https://wiki.warthunder.com/unit/su_27,unit_display_name,weapons/su_r_27t,2026-10-11T23:11:51+00:00
+su_r_27t1,R-27T1,R-27T1 air-to-air missiles,,,weapons/su_r_27t1,2026-10-11T23:11:51+00:00
+su_r_3r,R-3R,R-3R air-to-air missiles,,,weapons/su_r_3r,2026-10-11T23:11:51+00:00
+su_r_3r_default,R-3R,R-3R air-to-air missiles,,,weapons/su_r_3r_default,2026-10-11T23:11:51+00:00
+su_r_3s,R-3S,R-3S air-to-air missiles,,,weapons/su_r_3s,2026-10-11T23:11:51+00:00
+su_r_3s_default,R-3S,R-3S air-to-air missiles,,,weapons/su_r_3s_default,2026-10-11T23:11:51+00:00
+su_r_40rd,R-40RD,R-40RD air-to-air missiles,,,weapons/su_r_40rd,2026-10-11T23:11:51+00:00
+su_r_40rd_default,R-40RD,R-40RD air-to-air missiles,,,weapons/su_r_40rd_default,2026-10-11T23:11:51+00:00
+su_r_40td,R-40TD,R-40TD air-to-air missiles,,,weapons/su_r_40td,2026-10-11T23:11:51+00:00
+su_r_40td_default,R-40TD,R-40TD air-to-air missiles,,,weapons/su_r_40td_default,2026-10-11T23:11:51+00:00
+su_r_60,R-60,R-60 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r60,collection_name,weapons/su_r_60,2026-10-11T23:11:51+00:00
+su_r_60_default,R-60,R-60 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r60,collection_name,weapons/su_r_60_default,2026-10-11T23:11:51+00:00
+su_r_60m,R-60M,R-60M air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r60m,collection_name,weapons/su_r_60m,2026-10-11T23:11:51+00:00
+su_r_60m_default,R-60M,R-60M air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r60m,collection_name,weapons/su_r_60m_default,2026-10-11T23:11:51+00:00
+su_r_60mk,R-60MK,R-60MK air-to-air missiles,,,weapons/su_r_60mk,2026-10-11T23:11:51+00:00
+su_r_60mk_default,R-60MK,R-60MK air-to-air missiles,,,weapons/su_r_60mk_default,2026-10-11T23:11:51+00:00
+su_r_73,R-73,R-73 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r73,collection_name,weapons/su_r_73,2026-10-11T23:11:51+00:00
+su_r_73_default,R-73,R-73 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r73,collection_name,weapons/su_r_73_default,2026-10-11T23:11:51+00:00
+su_r_73e,R-73E,R-73E air-to-air missiles,https://wiki.warthunder.com/unit/su_30mkk,unit_display_name,weapons/su_r_73e,2026-10-11T23:11:51+00:00
+su_r_73e_default,R-73E,R-73E air-to-air missiles,https://wiki.warthunder.com/unit/su_30mk2v_venezuela,unit_display_name,weapons/su_r_73e_default,2026-10-11T23:11:51+00:00
+su_r_77,R-77,R-77 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r_77,collection_name,weapons/su_r_77,2026-10-11T23:11:51+00:00
+su_r_77_1,R-77-1,R-77-1 air-to-air missiles,https://wiki.warthunder.com/unit/su_30sm2,unit_mod_id,weapons/su_r_77_1,2026-10-11T23:11:51+00:00
+su_r_77_1_default,R-77-1,R-77-1 air-to-air missiles,https://wiki.warthunder.com/unit/su_30sm2,unit_mod_id,weapons/su_r_77_1_default,2026-10-11T23:11:51+00:00
+su_r_77_default,R-77,R-77 air-to-air missiles,https://wiki.warthunder.com/collections/weapon/r_77,collection_name,weapons/su_r_77_default,2026-10-11T23:11:51+00:00
+su_rvv_ae,RVV-AE,RVV-AE air-to-air missiles,https://wiki.warthunder.com/unit/su_30mkk,unit_display_name,weapons/su_rvv_ae,2026-10-11T23:11:51+00:00
+su_rvv_ae_default,RVV-AE,RVV-AE air-to-air missiles,,,weapons/su_rvv_ae_default,2026-10-11T23:11:51+00:00
+su_rvv_sd,RVV-SD,RVV-SD air-to-air missiles,https://wiki.warthunder.com/unit/su_30mkm,unit_mod_id,weapons/su_rvv_sd,2026-10-11T23:11:51+00:00
+su_rvv_sd_default,RVV-SD,RVV-SD air-to-air missiles,,,weapons/su_rvv_sd_default,2026-10-11T23:11:51+00:00
+su_s_25l_rocket,S-25L,S-25L missiles,,,weapons/su_s_25l_rocket,2026-10-11T23:11:51+00:00
+su_s_25ld,S-25LD,S-25LD missiles,,,weapons/su_s_25ld,2026-10-11T23:11:51+00:00
+swd_rb24,RB24,RB24 air-to-air missiles,,,weapons/swd_rb24,2026-10-11T23:11:51+00:00
+swd_rb24_default,RB24,RB24 air-to-air missiles,,,weapons/swd_rb24_default,2026-10-11T23:11:51+00:00
+swd_rb24j,RB24J,RB24J air-to-air missiles,,,weapons/swd_rb24j,2026-10-11T23:11:51+00:00
+swd_rb24j_default,RB24J,RB24J air-to-air missiles,,,weapons/swd_rb24j_default,2026-10-11T23:11:51+00:00
+swd_rb27,RB27,RB27 air-to-air missiles,,,weapons/swd_rb27,2026-10-11T23:11:51+00:00
+swd_rb28,RB28,RB28 air-to-air missiles,,,weapons/swd_rb28,2026-10-11T23:11:51+00:00
+swd_rb52,RB 52 A,RB 52 A missiles,,,weapons/swd_rb52,2026-10-11T23:11:51+00:00
+swd_rb53,RB 53,RB 53 Bantam missiles,,,weapons/swd_rb53,2026-10-11T23:11:51+00:00
+swd_rb55b,RB 55B,RB 55B Heli TOW missiles,,,weapons/swd_rb55b,2026-10-11T23:11:51+00:00
+swd_rb55c,RB 55C,RB 55C Heli TOW missiles,,,weapons/swd_rb55c,2026-10-11T23:11:51+00:00
+swd_rb71,RB71 (DF),RB71 (Dogfight) air-to-air missiles,,,weapons/swd_rb71,2026-10-11T23:11:51+00:00
+swd_rb71_default,RB71 (DF),RB71 (Dogfight) air-to-air missiles,,,weapons/swd_rb71_default,2026-10-11T23:11:51+00:00
+swd_rb74,RB 74,RB 74 air-to-air missiles,,,weapons/swd_rb74,2026-10-11T23:11:51+00:00
+swd_rb74_bol_pod,RB 74,RB 74 air-to-air missiles,,,weapons/swd_rb74_bol_pod,2026-10-11T23:11:51+00:00
+swd_rb74_default,RB 74,RB 74 air-to-air missiles,,,weapons/swd_rb74_default,2026-10-11T23:11:51+00:00
+swd_rb74m,RB 74(M),RB 74(M) air-to-air missiles,,,weapons/swd_rb74m,2026-10-11T23:11:51+00:00
+swd_rb74m_bol_pod,RB 74(M),RB 74(M) air-to-air missiles,,,weapons/swd_rb74m_bol_pod,2026-10-11T23:11:51+00:00
+swd_rb74m_default,RB 74(M),RB 74(M) air-to-air missiles,,,weapons/swd_rb74m_default,2026-10-11T23:11:51+00:00
+swd_rb75,RB 75,RB 75 air-to-ground missile,,,weapons/swd_rb75,2026-10-11T23:11:51+00:00
+swd_rb75t,RB 75T,RB 75T air-to-ground missile,,,weapons/swd_rb75t,2026-10-11T23:11:51+00:00
+swd_rb99,RB 99,RB 99 air-to-air missiles,,,weapons/swd_rb99,2026-10-11T23:11:51+00:00
+swd_rb99_default,RB 99,RB 99 air-to-air missiles,https://wiki.warthunder.com/unit/saab_ja37di_f21,unit_mod_id,weapons/swd_rb99_default,2026-10-11T23:11:51+00:00
+swd_rb_05a,Rb05A,Rb05A missiles,,,weapons/swd_rb_05a,2026-10-11T23:11:51+00:00
+swd_rb_15f,RB 15F,RB 15F anti-ship missile,,,weapons/swd_rb_15f,2026-10-11T23:11:51+00:00
+sws_flz_lwf_63,Flz Lwf 63,Flz Lwf 63 air-to-air missiles,,,weapons/sws_flz_lwf_63,2026-10-11T23:11:51+00:00
+sws_flz_lwf_63_75,Flz Lwf LL 63/75,Flz Lwf LL 63/75 SIWA air-to-air missiles,,,weapons/sws_flz_lwf_63_75,2026-10-11T23:11:51+00:00
+sws_flz_lwf_63_80,Flz Lwf 63/80,Flz Lwf 63/80 air-to-air missiles,,,weapons/sws_flz_lwf_63_80,2026-10-11T23:11:51+00:00
+sws_flz_lwf_lb_82,Flz Lwf LB 82,Flz Lwf LB 82 air-to-ground missile,,,weapons/sws_flz_lwf_lb_82,2026-10-11T23:11:51+00:00
+sws_flz_lwf_ll_64,FL 64/79,Flz Lwf LL 64/79 FALCO air-to-air missiles,,,weapons/sws_flz_lwf_ll_64,2026-10-11T23:11:51+00:00
+tr_cirit_mpw_missile,CIRIT,CIRIT missiles,,,weapons/tr_cirit_mpw_missile,2026-10-11T23:11:51+00:00
+tr_l_umtas_missile,L-UMTAS,L-UMTAS missiles,,,weapons/tr_l_umtas_missile,2026-10-11T23:11:51+00:00
+ucav_aam,AAM Fowler,Fowler air-to-air missiles,,,weapons/ucav_aam,2026-10-11T23:11:51+00:00
+ucav_agm,ATGM Parisarrow,Parisarrow anti-tank guided missile,,,weapons/ucav_agm,2026-10-11T23:11:51+00:00
+ucav_heavy_missile,TM Smasher,TM Smasher tactical missile,,,weapons/ucav_heavy_missile,2026-10-11T23:11:51+00:00
+uk_alarm,ALARM,ALARM anti-radiation missiles,,,weapons/uk_alarm,2026-10-11T23:11:51+00:00
+uk_brimstone_dm,Brimstone (SAL),Semi-Active Laser mode Brimstone air-to-ground missile,,,weapons/uk_brimstone_dm,2026-10-11T23:11:51+00:00
+uk_fireflash,Fireflash,Fireflash air-to-air missiles,,,weapons/uk_fireflash,2026-10-11T23:11:51+00:00
+uk_firestreak,Firestreak,Firestreak air-to-air missiles,https://wiki.warthunder.com/collections/weapon/firestreak,collection_name,weapons/uk_firestreak,2026-10-11T23:11:51+00:00
+uk_firestreak_Javelin,Firestreak,Firestreak air-to-air missiles,https://wiki.warthunder.com/collections/weapon/firestreak,collection_name,weapons/uk_firestreak_Javelin,2026-10-11T23:11:51+00:00
+uk_firestreak_default,Firestreak,Firestreak air-to-air missiles,https://wiki.warthunder.com/collections/weapon/firestreak,collection_name,weapons/uk_firestreak_default,2026-10-11T23:11:51+00:00
+uk_martlet,Martlet,LMM Martlet air-to-ground missiles,,,weapons/uk_martlet,2026-10-11T23:11:51+00:00
+uk_martlet_default,Martlet,LMM Martlet air-to-ground missiles,,,weapons/uk_martlet_default,2026-10-11T23:11:51+00:00
+uk_redtop,Red Top,Red Top air-to-air missiles,,,weapons/uk_redtop,2026-10-11T23:11:51+00:00
+uk_sea_eagle,MBDA Sea Eagle,MBDA Sea Eagle missile,https://wiki.warthunder.com/collections/weapon/sea_eagle,collection_name,weapons/uk_sea_eagle,2026-10-11T23:11:51+00:00
+uk_sea_eagle_wo_radar_designation,MBDA Sea Eagle,MBDA Sea Eagle missile,https://wiki.warthunder.com/collections/weapon/sea_eagle,collection_name,weapons/uk_sea_eagle_wo_radar_designation,2026-10-11T23:11:51+00:00
+uk_skyflash_aim_7,Skyflash,Skyflash air-to-air missiles,https://wiki.warthunder.com/collections/weapon/skyflash,collection_name,weapons/uk_skyflash_aim_7,2026-10-11T23:11:51+00:00
+uk_skyflash_aim_7_dogfight,Skyflash (DF),Skyflash (Dogfight) air-to-air missiles,,,weapons/uk_skyflash_aim_7_dogfight,2026-10-11T23:11:51+00:00
+uk_skyflash_aim_7_dogfight_default,Skyflash (DF),Skyflash (Dogfight) air-to-air missiles,,,weapons/uk_skyflash_aim_7_dogfight_default,2026-10-11T23:11:51+00:00
+uk_skyflash_aim_7_dogfight_tornado,Skyflash (DF),Skyflash (Dogfight) air-to-air missiles,,,weapons/uk_skyflash_aim_7_dogfight_tornado,2026-10-11T23:11:51+00:00
+uk_skyflash_aim_7_dogfight_tornado_default,Skyflash (DF),Skyflash (Dogfight) air-to-air missiles,,,weapons/uk_skyflash_aim_7_dogfight_tornado_default,2026-10-11T23:11:51+00:00
+uk_skyflash_temp,Skyflash SuperTEMP,Skyflash SuperTEMP air-to-air missiles,,,weapons/uk_skyflash_temp,2026-10-11T23:11:51+00:00
+uk_sraam,SRAAM,SRAAM air-to-air missiles,,,weapons/uk_sraam,2026-10-11T23:11:51+00:00
+uk_sraam_default,SRAAM,SRAAM air-to-air missiles,,,weapons/uk_sraam_default,2026-10-11T23:11:51+00:00
+us_127mm_TOW,BGM-71C,BGM-71С Improved TOW missiles,,,weapons/us_127mm_TOW,2026-10-11T23:11:51+00:00
+us_127mm_TOW2,BGM-71D TOW-2,BGM-71D TOW-2 missiles,,,weapons/us_127mm_TOW2,2026-10-11T23:11:51+00:00
+us_AGM_22,AGM-22,AGM-22 missiles,,,weapons/us_AGM_22,2026-10-11T23:11:51+00:00
+us_AGM_22_default,AGM-22,AGM-22 missiles,,,weapons/us_AGM_22_default,2026-10-11T23:11:51+00:00
+us_agm_119a_penguin,AGM-119A Penguin,AGM-119A Penguin missile,,,weapons/us_agm_119a_penguin,2026-10-11T23:11:51+00:00
+us_agm_119a_penguin_wo_radar_designation,AGM-119A Penguin,AGM-119A Penguin missile,,,weapons/us_agm_119a_penguin_wo_radar_designation,2026-10-11T23:11:51+00:00
+us_agm_122,AGM-122,AGM-122 Sidearm anti-radiation missiles,https://wiki.warthunder.com/collections/weapon/agm_122,collection_name,weapons/us_agm_122,2026-10-11T23:11:51+00:00
+us_agm_123,AGM-123 Skipper,AGM-123 Skipper missile,,,weapons/us_agm_123,2026-10-11T23:11:51+00:00
+us_agm_12b_bullpup,AGM-12B,AGM-12B Bullpup air-to-ground missiles,,,weapons/us_agm_12b_bullpup,2026-10-11T23:11:51+00:00
+us_agm_12b_bullpup_heli,AGM-12B,AGM-12B Bullpup air-to-ground missiles,,,weapons/us_agm_12b_bullpup_heli,2026-10-11T23:11:51+00:00
+us_agm_12c_bullpup,AGM-12C,AGM-12C Bullpup air-to-ground missiles,,,weapons/us_agm_12c_bullpup,2026-10-11T23:11:51+00:00
+us_agm_179_mr_ir,AGM-179 IR,AGM-179 JAGM-MR (IR) air-to-ground missiles,,,weapons/us_agm_179_mr_ir,2026-10-11T23:11:51+00:00
+us_agm_179_mr_sal,AGM-179 SAL,AGM-179 JAGM-MR (SAL) air-to-ground missiles,,,weapons/us_agm_179_mr_sal,2026-10-11T23:11:51+00:00
+us_agm_45a_1,AGM-45A-1,AGM-45A-1 Shrike anti-radiation missile,,,weapons/us_agm_45a_1,2026-10-11T23:11:51+00:00
+us_agm_45a_10,AGM-45A-10,AGM-45A-10 Shrike anti-radiation missile,,,weapons/us_agm_45a_10,2026-10-11T23:11:51+00:00
+us_agm_45a_2,AGM-45A-2,AGM-45A-2 Shrike anti-radiation missile,,,weapons/us_agm_45a_2,2026-10-11T23:11:51+00:00
+us_agm_45a_3b,AGM-45A-3B,AGM-45A-3B Shrike anti-radiation missile,,,weapons/us_agm_45a_3b,2026-10-11T23:11:51+00:00
+us_agm_45a_4,AGM-45A-4,AGM-45A-4 Shrike anti-radiation missile,,,weapons/us_agm_45a_4,2026-10-11T23:11:51+00:00
+us_agm_45a_6,AGM-45A-6,AGM-45A-6 Shrike anti-radiation missile,,,weapons/us_agm_45a_6,2026-10-11T23:11:51+00:00
+us_agm_45a_7,AGM-45A-7,AGM-45A-7 Shrike anti-radiation missile,,,weapons/us_agm_45a_7,2026-10-11T23:11:51+00:00
+us_agm_45a_9,AGM-45A-9,AGM-45A-9 Shrike anti-radiation missile,,,weapons/us_agm_45a_9,2026-10-11T23:11:51+00:00
+us_agm_45b_1,AGM-45B-1,AGM-45B-1 Shrike anti-radiation missile,,,weapons/us_agm_45b_1,2026-10-11T23:11:51+00:00
+us_agm_45b_10,AGM-45B-10,AGM-45B-10 Shrike anti-radiation missile,,,weapons/us_agm_45b_10,2026-10-11T23:11:51+00:00
+us_agm_45b_2,AGM-45B-2,AGM-45B-2 Shrike anti-radiation missile,,,weapons/us_agm_45b_2,2026-10-11T23:11:51+00:00
+us_agm_45b_3b,AGM-45B-3B,AGM-45B-3B Shrike anti-radiation missile,,,weapons/us_agm_45b_3b,2026-10-11T23:11:51+00:00
+us_agm_45b_4,AGM-45B-4,AGM-45B-4 Shrike anti-radiation missile,,,weapons/us_agm_45b_4,2026-10-11T23:11:51+00:00
+us_agm_45b_6,AGM-45B-6,AGM-45B-6 Shrike anti-radiation missile,,,weapons/us_agm_45b_6,2026-10-11T23:11:51+00:00
+us_agm_45b_7,AGM-45B-7,AGM-45B-7 Shrike anti-radiation missile,,,weapons/us_agm_45b_7,2026-10-11T23:11:51+00:00
+us_agm_45b_9,AGM-45B-9,AGM-45B-9 Shrike anti-radiation missile,,,weapons/us_agm_45b_9,2026-10-11T23:11:51+00:00
+us_agm_65a,AGM-65A,AGM-65A air-to-ground missile,,,weapons/us_agm_65a,2026-10-11T23:11:51+00:00
+us_agm_65b,AGM-65B,AGM-65B air-to-ground missile,https://wiki.warthunder.com/unit/f_16xl,unit_mod_id,weapons/us_agm_65b,2026-10-11T23:11:51+00:00
+us_agm_65d,AGM-65D,AGM-65D air-to-ground missile,https://wiki.warthunder.com/unit/f_16am_block_20_mlu_netherlands,unit_mod_id,weapons/us_agm_65d,2026-10-11T23:11:51+00:00
+us_agm_65e,AGM-65E,AGM-65E air-to-ground missile,,,weapons/us_agm_65e,2026-10-11T23:11:51+00:00
+us_agm_65e2,AGM-65E2,AGM-65E2 air-to-ground missile,,,weapons/us_agm_65e2,2026-10-11T23:11:51+00:00
+us_agm_65f,AGM-65F,AGM-65F air-to-ground missile,,,weapons/us_agm_65f,2026-10-11T23:11:51+00:00
+us_agm_65g,AGM-65G,AGM-65G air-to-ground missile,,,weapons/us_agm_65g,2026-10-11T23:11:51+00:00
+us_agm_65h,AGM-65H,AGM-65H air-to-ground missile,,,weapons/us_agm_65h,2026-10-11T23:11:51+00:00
+us_agm_65l,AGM-65L,AGM-65L air-to-ground missile,,,weapons/us_agm_65l,2026-10-11T23:11:51+00:00
+us_agm_84d,AGM-84D,AGM-84D Harpoon anti-ship missile,,,weapons/us_agm_84d,2026-10-11T23:11:51+00:00
+us_agm_84h_slam_er,AGM-84H,AGM-84H air-to-ground missile,,,weapons/us_agm_84h_slam_er,2026-10-11T23:11:51+00:00
+us_agm_88a,AGM-88A,AGM-88A HARM anti-radiation missile,,,weapons/us_agm_88a,2026-10-11T23:11:51+00:00
+us_agm_88c,AGM-88C,AGM-88C HARM anti-radiation missile,,,weapons/us_agm_88c,2026-10-11T23:11:51+00:00
+us_agm_88g,AGM-88G,AGM-88G AARGM-ER anti-radiation missile,,,weapons/us_agm_88g,2026-10-11T23:11:51+00:00
+us_aim4f_falcon,AIM-4F,AIM-4F Super Falcon air-to-air missiles,,,weapons/us_aim4f_falcon,2026-10-11T23:11:51+00:00
+us_aim4f_falcon_default,AIM-4F,AIM-4F Super Falcon air-to-air missiles,,,weapons/us_aim4f_falcon_default,2026-10-11T23:11:51+00:00
+us_aim4g_falcon,AIM-4G,AIM-4G Super Falcon air-to-air missiles,,,weapons/us_aim4g_falcon,2026-10-11T23:11:51+00:00
+us_aim4g_falcon_default,AIM-4G,AIM-4G Super Falcon air-to-air missiles,,,weapons/us_aim4g_falcon_default,2026-10-11T23:11:51+00:00
+us_aim7c_sparrow,AIM-7C,AIM-7C Sparrow air-to-air missiles,,,weapons/us_aim7c_sparrow,2026-10-11T23:11:51+00:00
+us_aim7d_sparrow,AIM-7D,AIM-7D Sparrow air-to-air missiles,,,weapons/us_aim7d_sparrow,2026-10-11T23:11:51+00:00
+us_aim7e2_dogfight_sparrow,AIM-7E-2 (DF),AIM-7E-2 Sparrow (Dogfight) air-to-air missiles,,,weapons/us_aim7e2_dogfight_sparrow,2026-10-11T23:11:51+00:00
+us_aim7e2_sparrow,AIM-7E-2,AIM-7E-2 Sparrow air-to-air missiles,,,weapons/us_aim7e2_sparrow,2026-10-11T23:11:51+00:00
+us_aim7e_sparrow,AIM-7E,AIM-7E Sparrow air-to-air missiles,,,weapons/us_aim7e_sparrow,2026-10-11T23:11:51+00:00
+us_aim7f_sparrow,AIM-7F,AIM-7F Sparrow air-to-air missiles,,,weapons/us_aim7f_sparrow,2026-10-11T23:11:51+00:00
+us_aim7f_sparrow_default,AIM-7F,AIM-7F Sparrow air-to-air missiles,,,weapons/us_aim7f_sparrow_default,2026-10-11T23:11:51+00:00
+us_aim7f_sparrow_f_14,AIM-7F,AIM-7F Sparrow air-to-air missiles,,,weapons/us_aim7f_sparrow_f_14,2026-10-11T23:11:51+00:00
+us_aim7f_sparrow_fa_18,AIM-7F,AIM-7F Sparrow air-to-air missiles,,,weapons/us_aim7f_sparrow_fa_18,2026-10-11T23:11:51+00:00
+us_aim7m_sparrow,AIM-7M,AIM-7M Sparrow air-to-air missiles,,,weapons/us_aim7m_sparrow,2026-10-11T23:11:51+00:00
+us_aim7m_sparrow_default,AIM-7M,AIM-7M Sparrow air-to-air missiles,,,weapons/us_aim7m_sparrow_default,2026-10-11T23:11:51+00:00
+us_aim7m_sparrow_f_14,AIM-7M,AIM-7M Sparrow air-to-air missiles,https://wiki.warthunder.com/unit/f_14d_vf_11,unit_display_name,weapons/us_aim7m_sparrow_f_14,2026-10-11T23:11:51+00:00
+us_aim7m_sparrow_f_15,AIM-7M,AIM-7M Sparrow air-to-air missiles,https://wiki.warthunder.com/unit/f_15a,unit_display_name,weapons/us_aim7m_sparrow_f_15,2026-10-11T23:11:51+00:00
+us_aim7m_sparrow_f_15_default,AIM-7M,AIM-7M Sparrow air-to-air missiles,https://wiki.warthunder.com/unit/f_15a,unit_display_name,weapons/us_aim7m_sparrow_f_15_default,2026-10-11T23:11:51+00:00
+us_aim7m_sparrow_f_16,AIM-7M,AIM-7M Sparrow air-to-air missiles,,,weapons/us_aim7m_sparrow_f_16,2026-10-11T23:11:51+00:00
+us_aim7m_sparrow_f_16_default,AIM-7M,AIM-7M Sparrow air-to-air missiles,,,weapons/us_aim7m_sparrow_f_16_default,2026-10-11T23:11:51+00:00
+us_aim7m_sparrow_fa_18,AIM-7M,AIM-7M Sparrow air-to-air missiles,,,weapons/us_aim7m_sparrow_fa_18,2026-10-11T23:11:51+00:00
+us_aim7p_sparrow_fa_18,AIM-7P,AIM-7P Sparrow air-to-air missiles,https://wiki.warthunder.com/unit/fa_18c_early,unit_display_name,weapons/us_aim7p_sparrow_fa_18,2026-10-11T23:11:51+00:00
+us_aim7p_sparrow_fa_18_default,AIM-7P,AIM-7P Sparrow air-to-air missiles,https://wiki.warthunder.com/unit/fa_18c_early,unit_display_name,weapons/us_aim7p_sparrow_fa_18_default,2026-10-11T23:11:51+00:00
+us_aim92_stinger,ATAS,ATAS (AIM-92) missiles,,,weapons/us_aim92_stinger,2026-10-11T23:11:51+00:00
+us_aim92_stinger_atas_tiger,ATAS,ATAS (AIM-92) missiles,,,weapons/us_aim92_stinger_atas_tiger,2026-10-11T23:11:51+00:00
+us_aim92_stinger_left,ATAS,ATAS (AIM-92) missiles,,,weapons/us_aim92_stinger_left,2026-10-11T23:11:51+00:00
+us_aim92_stinger_right,ATAS,ATAS (AIM-92) missiles,,,weapons/us_aim92_stinger_right,2026-10-11T23:11:51+00:00
+us_aim9b_fgw_2_sidewinder,AIM-9B FGW.2,AIM-9B FGW.2 Sidewinder air-to-air missiles,,,weapons/us_aim9b_fgw_2_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9b_sidewinder,AIM-9B,AIM-9B Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9b_sidewinder,collection_name,weapons/us_aim9b_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9b_sidewinder_cwp,AIM-9B,AIM-9B Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9b_sidewinder,collection_name,weapons/us_aim9b_sidewinder_cwp,2026-10-11T23:11:51+00:00
+us_aim9b_sidewinder_default,AIM-9B,AIM-9B Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9b_sidewinder,collection_name,weapons/us_aim9b_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9b_sidewinder_default_group,AIM-9B,AIM-9B Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9b_sidewinder,collection_name,weapons/us_aim9b_sidewinder_default_group,2026-10-11T23:11:51+00:00
+us_aim9c_sidewinder,AIM-9C,AIM-9C Sidewinder air-to-air missiles,,,weapons/us_aim9c_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9c_sidewinder_default,AIM-9C,AIM-9C Sidewinder air-to-air missiles,,,weapons/us_aim9c_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9c_sidewinder_default_group,AIM-9C,AIM-9C Sidewinder air-to-air missiles,,,weapons/us_aim9c_sidewinder_default_group,2026-10-11T23:11:51+00:00
+us_aim9d_sidewinder,AIM-9D,AIM-9D Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9d_sidewinder,collection_name,weapons/us_aim9d_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9d_sidewinder_cwp,AIM-9D,AIM-9D Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9d_sidewinder,collection_name,weapons/us_aim9d_sidewinder_cwp,2026-10-11T23:11:51+00:00
+us_aim9d_sidewinder_default,AIM-9D,AIM-9D Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9d_sidewinder,collection_name,weapons/us_aim9d_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9d_sidewinder_default_group,AIM-9D,AIM-9D Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9d_sidewinder,collection_name,weapons/us_aim9d_sidewinder_default_group,2026-10-11T23:11:51+00:00
+us_aim9e_sidewinder,AIM-9E,AIM-9E Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9e_sidewinder,collection_name,weapons/us_aim9e_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9e_sidewinder_default,AIM-9E,AIM-9E Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9e_sidewinder,collection_name,weapons/us_aim9e_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9g_sidewinder,AIM-9G,AIM-9G Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9g_sidewinder,collection_name,weapons/us_aim9g_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9g_sidewinder_default,AIM-9G,AIM-9G Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9g_sidewinder,collection_name,weapons/us_aim9g_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9h_sidewinder,AIM-9H,AIM-9H Sidewinder air-to-air missiles,,,weapons/us_aim9h_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9j_sidewinder,AIM-9J,AIM-9J Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9j_sidewinder,collection_name,weapons/us_aim9j_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9j_sidewinder_default,AIM-9J,AIM-9J Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9j_sidewinder,collection_name,weapons/us_aim9j_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9l_i_1_sidewinder,AIM-9L/I-1,AIM-9L/I-1 Sidewinder air-to-air missiles,,,weapons/us_aim9l_i_1_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9l_i_1_sidewinder_default,AIM-9L/I-1,AIM-9L/I-1 Sidewinder air-to-air missiles,,,weapons/us_aim9l_i_1_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9l_i_sidewinder,AIM-9L/I,AIM-9L/I Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9li_sidewinder,collection_name,weapons/us_aim9l_i_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9l_i_sidewinder_default,AIM-9L/I,AIM-9L/I Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9li_sidewinder,collection_name,weapons/us_aim9l_i_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9l_sidewinder,AIM-9L,AIM-9L Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9l_sidewinder,collection_name,weapons/us_aim9l_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9l_sidewinder_bol_pod,AIM-9L,AIM-9L Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9l_sidewinder,collection_name,weapons/us_aim9l_sidewinder_bol_pod,2026-10-11T23:11:51+00:00
+us_aim9l_sidewinder_default,AIM-9L,AIM-9L Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9l_sidewinder,collection_name,weapons/us_aim9l_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9l_sidewinder_default_bol_pod,AIM-9L,AIM-9L Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9l_sidewinder,collection_name,weapons/us_aim9l_sidewinder_default_bol_pod,2026-10-11T23:11:51+00:00
+us_aim9m_sidewinder,AIM-9M,AIM-9M Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9m_sidewinder,collection_name,weapons/us_aim9m_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9m_sidewinder_bol_pod,AIM-9M,AIM-9M Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9m_sidewinder,collection_name,weapons/us_aim9m_sidewinder_bol_pod,2026-10-11T23:11:51+00:00
+us_aim9m_sidewinder_default,AIM-9M,AIM-9M Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9m_sidewinder,collection_name,weapons/us_aim9m_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9n_sidewinder,AIM-9N,AIM-9N Sidewinder air-to-air missiles,,,weapons/us_aim9n_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9p4_sidewinder,AIM-9P-4,AIM-9P-4 Sidewinder air-to-air missiles,,,weapons/us_aim9p4_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9p4_sidewinder_default,AIM-9P-4,AIM-9P-4 Sidewinder air-to-air missiles,,,weapons/us_aim9p4_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim9p_sidewinder,AIM-9P,AIM-9P Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9p_sidewinder,collection_name,weapons/us_aim9p_sidewinder,2026-10-11T23:11:51+00:00
+us_aim9p_sidewinder_default,AIM-9P,AIM-9P Sidewinder air-to-air missiles,https://wiki.warthunder.com/collections/weapon/aim9p_sidewinder,collection_name,weapons/us_aim9p_sidewinder_default,2026-10-11T23:11:51+00:00
+us_aim_120a,AIM-120A,AIM-120A AMRAAM air-to-air missiles,https://wiki.warthunder.com/unit/f_15j_kai,unit_mod_id,weapons/us_aim_120a,2026-10-11T23:11:51+00:00
+us_aim_120a_default,AIM-120A,AIM-120A AMRAAM air-to-air missiles,https://wiki.warthunder.com/unit/f_15j_kai,unit_mod_id,weapons/us_aim_120a_default,2026-10-11T23:11:51+00:00
+us_aim_120b,AIM-120B,AIM-120B AMRAAM air-to-air missiles,,,weapons/us_aim_120b,2026-10-11T23:11:51+00:00
+us_aim_120b_bol_pod,AIM-120B,AIM-120B AMRAAM air-to-air missiles,,,weapons/us_aim_120b_bol_pod,2026-10-11T23:11:51+00:00
+us_aim_120b_default,AIM-120B,AIM-120B AMRAAM air-to-air missiles,,,weapons/us_aim_120b_default,2026-10-11T23:11:51+00:00
+us_aim_120b_default_switzerland,Flz Lwl LL 97 AMRAAM,Flz Lwl LL 97 AMRAAM air-to-air missiles,,,weapons/us_aim_120b_default_switzerland,2026-10-11T23:11:51+00:00
+us_aim_120b_switzerland,Flz Lwl LL 97 AMRAAM,Flz Lwl LL 97 AMRAAM air-to-air missiles,,,weapons/us_aim_120b_switzerland,2026-10-11T23:11:51+00:00
+us_aim_120c_5,AIM-120C-5,AIM-120C-5 AMRAAM air-to-air missiles,,,weapons/us_aim_120c_5,2026-10-11T23:11:51+00:00
+us_aim_120c_5_default,AIM-120C-5,AIM-120C-5 AMRAAM air-to-air missiles,,,weapons/us_aim_120c_5_default,2026-10-11T23:11:51+00:00
+us_aim_120c_5_default_switzerland,Flz Lwl LL 97 AMRAAM 120C-5,Flz Lwl LL 97 AMRAAM 120C-5 air-to-air missiles,,,weapons/us_aim_120c_5_default_switzerland,2026-10-11T23:11:51+00:00
+us_aim_120c_5_switzerland,Flz Lwl LL 97 AMRAAM 120C-5,Flz Lwl LL 97 AMRAAM 120C-5 air-to-air missiles,,,weapons/us_aim_120c_5_switzerland,2026-10-11T23:11:51+00:00
+us_aim_120c_7,AIM-120C-7,AIM-120C-7 AMRAAM air-to-air missiles,,,weapons/us_aim_120c_7,2026-10-11T23:11:51+00:00
+us_aim_120c_7_default,AIM-120C-7,AIM-120C-7 AMRAAM air-to-air missiles,,,weapons/us_aim_120c_7_default,2026-10-11T23:11:51+00:00
+us_aim_120c_7_sam,AIM-120C-7,AIM-120C-7 surface-to-air missiles,,,weapons/us_aim_120c_7_sam,2026-10-11T23:11:51+00:00
+us_aim_120d,AIM-120D,AIM-120D AMRAAM air-to-air missiles,https://wiki.warthunder.com/unit/fa_18e_block_2,unit_mod_id,weapons/us_aim_120d,2026-10-11T23:11:51+00:00
+us_aim_120d_default,AIM-120D,AIM-120D AMRAAM air-to-air missiles,https://wiki.warthunder.com/unit/fa_18e_block_2,unit_mod_id,weapons/us_aim_120d_default,2026-10-11T23:11:51+00:00
+us_aim_54a,AIM-54A,AIM-54A Phoenix air-to-air missiles,,,weapons/us_aim_54a,2026-10-11T23:11:51+00:00
+us_aim_54a_default,AIM-54A,AIM-54A Phoenix air-to-air missiles,,,weapons/us_aim_54a_default,2026-10-11T23:11:51+00:00
+us_aim_54c,AIM-54C,AIM-54C Phoenix air-to-air missiles,,,weapons/us_aim_54c,2026-10-11T23:11:51+00:00
+us_aim_54c_default,AIM-54C,AIM-54C Phoenix air-to-air missiles,,,weapons/us_aim_54c_default,2026-10-11T23:11:51+00:00
+us_aim_54c_plus,AIM-54C+,AIM-54C+ Phoenix air-to-air missiles,https://wiki.warthunder.com/unit/f_14d,unit_display_name,weapons/us_aim_54c_plus,2026-10-11T23:11:51+00:00
+us_aim_54c_plus_default,AIM-54C+,AIM-54C+ Phoenix air-to-air missiles,,,weapons/us_aim_54c_plus_default,2026-10-11T23:11:51+00:00
+us_aim_9x,AIM-9X,AIM-9X Sidewinder air-to-air missiles,,,weapons/us_aim_9x,2026-10-11T23:11:51+00:00
+us_aim_9x_block_2,AIM-9X Block 2,AIM-9X Block 2 Sidewinder air-to-air missiles,,,weapons/us_aim_9x_block_2,2026-10-11T23:11:51+00:00
+us_apkws_m151,AGR-20A,AGR-20A (APKWS II M151) missiles,,,weapons/us_apkws_m151,2026-10-11T23:11:51+00:00
+us_apkws_m282,AGR-20B,AGR-20B (APKWS II M282) missiles,,,weapons/us_apkws_m282,2026-10-11T23:11:51+00:00
+us_bgm_71_tow2_heli,BGM-71D,BGM-71D TOW-2 missiles,,,weapons/us_bgm_71_tow2_heli,2026-10-11T23:11:51+00:00
+us_bgm_71_tow2_heli_default,BGM-71D,BGM-71D TOW-2 missiles,,,weapons/us_bgm_71_tow2_heli_default,2026-10-11T23:11:51+00:00
+us_bgm_71_tow_heli,BGM-71C,BGM-71С Improved TOW missiles,,,weapons/us_bgm_71_tow_heli,2026-10-11T23:11:51+00:00
+us_bgm_71_tow_heli_default,BGM-71C,BGM-71С Improved TOW missiles,,,weapons/us_bgm_71_tow_heli_default,2026-10-11T23:11:51+00:00
+us_hellfire_agm_114_b,AGM-114B,AGM-114B Hellfire air-to-ground missiles,,,weapons/us_hellfire_agm_114_b,2026-10-11T23:11:51+00:00
+us_hellfire_agm_114_b_default,AGM-114B,AGM-114B Hellfire air-to-ground missiles,,,weapons/us_hellfire_agm_114_b_default,2026-10-11T23:11:51+00:00
+us_hellfire_agm_114_c,AGM-114C,AGM-114C Hellfire air-to-ground missiles,,,weapons/us_hellfire_agm_114_c,2026-10-11T23:11:51+00:00
+us_hellfire_agm_114_k,AGM-114K,AGM-114K Hellfire II air-to-ground missiles,,,weapons/us_hellfire_agm_114_k,2026-10-11T23:11:51+00:00
+us_hellfire_agm_114_k_default,AGM-114K,AGM-114K Hellfire II air-to-ground missiles,,,weapons/us_hellfire_agm_114_k_default,2026-10-11T23:11:51+00:00
+us_hellfire_agm_114_k_ucav_default,AGM-114K,AGM-114K Hellfire II air-to-ground missiles,,,weapons/us_hellfire_agm_114_k_ucav_default,2026-10-11T23:11:51+00:00
+us_iris_t_sl,IRIS-T SLM,IRIS-T SLM SAM,https://wiki.warthunder.com/unit/germ_iris_slm_launcher,unit_armament,weapons/us_iris_t_sl/short,2026-10-11T23:11:51+00:00
+us_starstreak,Starstreak,Starstreak air-to-air missiles,,,weapons/us_starstreak,2026-10-11T23:11:51+00:00
+zt_6_mokopa,ZT-6 Mokopa,ZT-6 Mokopa air-to-ground missiles,,,weapons/zt_6_mokopa,2026-10-11T23:11:51+00:00
