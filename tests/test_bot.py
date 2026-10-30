@@ -11,6 +11,7 @@ from PIL import Image
 
 import app
 import discord_bot
+import gaijin_login
 from bot_image import render_match_png
 from bot_watch import WatchStore, merge_scan, parse_duration
 from discord_bot import image_data, search_text
@@ -93,6 +94,29 @@ class BotTests(unittest.TestCase):
                 fresh = app.site_page("PlayerName", 1, force_refresh=True)
                 self.assertEqual(fresh["items"][0]["map"], "Moscow")
                 official.assert_called_once()
+
+    def test_expired_cookie_triggers_one_login_and_retries_search(self):
+        expired = mock.Mock(status_code=200, headers={"Content-Type": "text/html"})
+        valid = mock.Mock(status_code=200, headers={"Content-Type": "application/json"})
+        valid.json.return_value = {"items": [], "total_count": 0}
+        with mock.patch.object(app, "request", side_effect=[expired, valid]) as official, \
+             mock.patch.object(app, "refresh_site_login", return_value="new") as login, \
+             mock.patch.object(gaijin_login, "configured", return_value=True):
+            self.assertEqual(app.replay_api_page({})["total_count"], 0)
+        self.assertEqual(official.call_count, 2)
+        login.assert_called_once_with()
+        expired.close.assert_called_once()
+        valid.close.assert_called_once()
+
+    def test_missing_cookie_uses_auto_login_before_request(self):
+        response = mock.Mock(status_code=200)
+        with mock.patch.object(app, "cookie", return_value=None), \
+             mock.patch.object(app, "refresh_site_login", return_value="new") as login, \
+             mock.patch.object(app.requests, "request", return_value=response) as official, \
+             mock.patch.object(app.time, "sleep"):
+            self.assertIs(app.request("https://warthunder.com/en/api/replay", auth=True), response)
+        login.assert_called_once_with()
+        self.assertEqual(official.call_args.kwargs["cookies"], {"identity_sid": "new"})
 
     def test_watch_commands_register(self):
         with self.temp_directory() as directory, \

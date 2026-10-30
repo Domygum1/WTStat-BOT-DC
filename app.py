@@ -103,11 +103,22 @@ def cookie():
         return None
 
 
+def refresh_site_login():
+    from gaijin_login import LoginError, configured, refresh_cookie
+    if not configured():
+        raise HTTPException(401, "官网搜索需要 identity_sid。请按 README 配置 Cookie 或自动登录。")
+    try:
+        return refresh_cookie()
+    except LoginError as error:
+        raise HTTPException(401, str(error)) from error
+
+
 def request(url, *, auth=False, stream=False, method="GET", payload=None, headers=None):
     global LAST_REQUEST
-    jar = {"identity_sid": cookie()} if auth and cookie() else None
-    if auth and not jar:
-        raise HTTPException(401, "官网搜索需要 identity_sid。请按 README 创建 config.local.json。")
+    site_cookie = cookie() if auth else None
+    if auth and not site_cookie:
+        site_cookie = refresh_site_login()
+    jar = {"identity_sid": site_cookie} if site_cookie else None
     with LOCK:
         wait = 1.5 - (time.monotonic() - LAST_REQUEST)
         if wait > 0:
@@ -152,18 +163,27 @@ def normalize_sid(value):
 
 
 def replay_api_page(payload):
-    r = request("https://warthunder.com/en/api/replay", auth=True, method="POST", payload=payload)
-    try:
-        if r.status_code != 200:
-            raise HTTPException(r.status_code, f"官网搜索返回 HTTP {r.status_code}。")
-        if "application/json" not in r.headers.get("Content-Type", ""):
-            raise HTTPException(401, "官网未返回 Replay 数据；请更新 config.local.json 中的 identity_sid。")
-        raw = r.json()
-        if not isinstance(raw.get("items"), list) or not isinstance(raw.get("total_count"), int):
-            raise HTTPException(502, "官网 Replay 接口结构已变化。")
-        return raw
-    finally:
-        r.close()
+    from gaijin_login import configured
+    for attempt in range(2):
+        r = request("https://warthunder.com/en/api/replay", auth=True, method="POST", payload=payload)
+        try:
+            content_type = r.headers.get("Content-Type", "")
+            auth_failed = r.status_code in (401, 403) or (r.status_code == 200 and "application/json" not in content_type)
+            if auth_failed and attempt == 0 and configured():
+                pass  # Close the response before opening the login browser below.
+            elif r.status_code != 200:
+                raise HTTPException(r.status_code, f"官网搜索返回 HTTP {r.status_code}。")
+            elif "application/json" not in content_type:
+                raise HTTPException(401, "官网未返回 Replay 数据；请更新 config.local.json 中的 identity_sid。")
+            else:
+                raw = r.json()
+                if not isinstance(raw.get("items"), list) or not isinstance(raw.get("total_count"), int):
+                    raise HTTPException(502, "官网 Replay 接口结构已变化。")
+                return raw
+        finally:
+            r.close()
+        refresh_site_login()
+    raise HTTPException(401, "网站登录仍未生效，请运行 python gaijin_login.py 完成人工验证。")
 
 
 def site_page(query, page, kind="USERNAME", *, force_refresh=False):

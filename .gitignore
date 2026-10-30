@@ -8,7 +8,9 @@ data/*.sqlite3
 data/*.sqlite
 data/*.db
 config.local.json
+config.local.json.tmp
 discord.local.json
+login.local.json
 .env
 .env.*
 *.wrpl

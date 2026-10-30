@@ -18,7 +18,10 @@
 
 1. 在 [Discord Developer Portal](https://discord.com/developers/applications) 创建应用和 Bot，复制 Bot Token。将 Bot 安装到服务器时选择 `bot` 和 `applications.commands`，授予“发送消息”和“附加文件”权限。
 2. 复制 `discord.local.example.json` 为 `discord.local.json`，填入 Token。建议填写数字 `guild_id`，命令会在该服务器同步。可在 Discord 开启开发者模式后右键服务器复制 ID。留空会同步全局命令，显示可能需要一些时间。
-3. 若要按昵称或 UID 搜索，复制 `config.local.example.json` 为 `config.local.json`，填入你本人在 `warthunder.com` 登录后的 `identity_sid` Cookie。Session ID 直查不需要此 Cookie。Cookie 失效时需自行更新。
+3. 若要按昵称或 UID 搜索，可选择手动 Cookie 或自动登录：
+   - 手动：复制 `config.local.example.json` 为 `config.local.json`，填入 `warthunder.com` 登录后的 `identity_sid`。
+   - 自动：复制 `login.local.example.json` 为 `login.local.json`，填写专供 Bot 使用的 Gaijin 小号邮箱和密码。Windows 需安装 Microsoft Edge。若目录里已有旧账号的 `config.local.json`，先删除该文件，Bot 才会立即用小号登录。Bot 使用 `work/gaijin_edge_profile/` 作为独立浏览器配置；首次缺少 Cookie 或网站登录失效时才尝试登录，并将新 Cookie 写入本目录的 `config.local.json`。失败后 10 分钟内不会再次尝试，避免连续提交密码。普通登录会在后台进行；如网站要求验证码或两步验证，在本目录运行 `.venv\Scripts\python.exe gaijin_login.py`，在出现的 Edge 窗口里人工完成验证。验证结束后重新使用命令；若监听因认证失败已停止，重新启动 `/wtwatch`。
+   Session ID 直查不需要 Cookie。自动登录取决于 Gaijin 当前网页流程，不保证永久无人值守。`login.local.json`、Cookie 和 Edge 配置仅保存在本项目本机，已被 Git 忽略；请勿将账号密码发到 Discord 或提交到 GitHub。
 4. 双击 `start_discord_bot.bat`。首次运行会在本目录创建 `.venv` 并安装依赖。窗口保持打开即可持续运行；关闭窗口会停止 Bot。
 
 也可以用环境变量 `DISCORD_BOT_TOKEN` 和 `DISCORD_GUILD_ID` 覆盖 Discord 配置文件。两个本地配置文件均被 Git 忽略，切勿提交或分享 Token、Cookie。

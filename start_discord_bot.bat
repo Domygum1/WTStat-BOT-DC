@@ -6,7 +6,7 @@ if not exist ".venv\Scripts\python.exe" (
   python -m venv .venv
   if errorlevel 1 goto :fail
 )
-".venv\Scripts\python.exe" -c "import discord, PIL, fastapi" >nul 2>&1
+".venv\Scripts\python.exe" -c "import discord, PIL, fastapi, playwright" >nul 2>&1
 if errorlevel 1 (
   python -m pip --python .venv install -r requirements-bot.txt
   if errorlevel 1 goto :fail
