@@ -1,3 +1,4 @@
+import asyncio
 import io
 import json
 import tempfile
@@ -76,6 +77,30 @@ class BotTests(unittest.TestCase):
             replacement = store.replace(123, "Another", 3600, [])
             self.assertFalse(store.save(updated))
             self.assertEqual(store.get(123).id, replacement.id)
+
+    def test_watches_in_two_channels_are_independent(self):
+        with self.temp_directory() as directory:
+            store = WatchStore(Path(directory) / "watch.sqlite3")
+            store.replace(123, "FirstPlayer", 3600, ["old-first"])
+            second = store.replace(456, "SecondPlayer", 7200, ["old-second"])
+            self.assertEqual({job.channel_id for job in store.list_active()}, {123, 456})
+            self.assertEqual(store.get(123).player, "FirstPlayer")
+            self.assertEqual(store.get(456).player, "SecondPlayer")
+            self.assertTrue(store.delete(123))
+            self.assertIsNone(store.get(123))
+            self.assertEqual(store.get(456).id, second.id)
+
+    def test_global_commands_sync_even_with_primary_guild(self):
+        with self.temp_directory() as directory, \
+             mock.patch.object(app, "DB", Path(directory) / "commands.sqlite3"), \
+             mock.patch.object(app, "sync_bundled_wiki"), \
+             mock.patch.object(discord_bot.app_commands.CommandTree, "sync", new_callable=mock.AsyncMock) as sync:
+            sync.return_value = []
+            bot = discord_bot.WTStatBot(123)
+            asyncio.run(bot.setup_hook())
+            self.assertEqual(sync.await_count, 2)
+            self.assertIsNone(sync.await_args_list[0].kwargs.get("guild"))
+            self.assertEqual(sync.await_args_list[1].kwargs["guild"].id, 123)
 
     def test_force_refresh_bypasses_five_minute_search_cache(self):
         raw = {"items": [{"sessionId": 8278619900504942392, "startTime": 1700000000,

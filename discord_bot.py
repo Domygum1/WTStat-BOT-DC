@@ -142,14 +142,13 @@ class WTStatBot(discord.Client):
 
     async def setup_hook(self):
         wtstat.sync_bundled_wiki()
+        commands = await self.tree.sync()
+        log.info("已全局同步 %s 个命令；新服务器显示可能需要一些时间", len(commands))
         if self.guild_id:
             guild = discord.Object(id=self.guild_id)
             self.tree.copy_global_to(guild=guild)
             commands = await self.tree.sync(guild=guild)
             log.info("已向服务器 %s 同步 %s 个命令", self.guild_id, len(commands))
-        else:
-            commands = await self.tree.sync()
-            log.info("已全局同步 %s 个命令；显示可能需要一些时间", len(commands))
 
     async def on_ready(self):
         for job in self.watch_store.list_active():

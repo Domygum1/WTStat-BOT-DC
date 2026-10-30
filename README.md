@@ -6,7 +6,7 @@
 
 - `/wtsearch player_name`：按玩家昵称或数字 UID 搜索官网最近 15 场对局，点击编号按钮输出该场双方最终战绩 PNG。
 - `/wtmatch session_id`：按十进制或 16 位十六进制 Session ID 直接输出战绩 PNG。搜索按钮 10 分钟后失效，但 Session ID 命令始终可用。
-- `/wtwatch player_name duration`：监听本频道的一个玩家；`duration` 可省略，默认 `1h`，也支持 `30m`、`2h`、`30分钟` 等，范围为 1 分钟至 24 小时。Bot 每 15 秒向官网刷新最近对局列表，发现新场次后在本频道发送该局战绩 PNG。启动时已有对局作为基线，不补发旧图。同一频道再次使用会替换原监听；Bot 重启后会恢复尚未到期的监听。
+- `/wtwatch player_name duration`：监听本频道的一个玩家；`duration` 可省略，默认 `1h`，也支持 `30m`、`2h`、`30分钟` 等，范围为 1 分钟至 24 小时。Bot 每 15 秒向官网刷新最近对局列表，发现新场次后在本频道发送该局战绩 PNG。启动时已有对局作为基线，不补发旧图。同一频道再次使用会替换原监听；不同频道的玩家、时长和战绩推送互不影响；Bot 重启后会恢复尚未到期的监听。
 - `/wtunwatch`：提前停止本频道的监听。
 - 图片使用 WTStat 当前“保存战局图片”的同一套画布渲染器：2400 像素宽，包含队伍与玩家旗帜、醒目的得分区、结算数据、载具和 BR；搜索时高亮对应玩家。渲染器和旗帜资源已复制到本项目，运行时无需启动或读取 WTStat。
 
@@ -17,8 +17,9 @@
 需要 Windows、Microsoft Edge、Python 3.12+、网络连接，以及 Discord Bot Token。Edge 用于在本机生成与 WTStat 一致的 PNG；不会打开你的 Firefox 配置。
 
 1. 在 [Discord Developer Portal](https://discord.com/developers/applications) 创建应用和 Bot，复制 Bot Token。将 Bot 安装到服务器时选择 `bot` 和 `applications.commands`，授予“发送消息”和“附加文件”权限。
-2. 复制 `discord.local.example.json` 为 `discord.local.json`，填入 Token。建议填写数字 `guild_id`，命令会在该服务器同步。可在 Discord 开启开发者模式后右键服务器复制 ID。留空会同步全局命令，显示可能需要一些时间。
+2. 复制 `discord.local.example.json` 为 `discord.local.json`，填入 Token。可填写数字 `guild_id`，以便在常用服务器快速同步命令。无论是否填写，Bot 都会同步全局命令，供其他已安装 Bot 的服务器使用；新服务器显示命令可能需要一些时间。可在 Discord 开启开发者模式后右键服务器复制 ID。
    如果启动时报 `403 Missing Access`，请核对 `guild_id` 是否为目标**服务器**的 ID，并确认此 Bot 已通过 OAuth2 安装到该服务器，包含 `bot` 和 `applications.commands`。启动脚本会保留错误窗口，便于查看具体信息。
+   要在其他人的服务器使用，把 Developer Portal 的 Installation 安装链接发给有“管理服务器”权限的人，由对方选择 Guild Install 并授权“发送消息”和“附加文件”。同一服务器的其他文字频道不需要重复安装，只需给 Bot 相应频道权限。到目标频道分别执行 `/wtwatch` 即可独立监听；在某频道执行 `/wtunwatch` 只停止该频道。
 3. 若要按昵称或 UID 搜索，可选择手动 Cookie 或自动登录：
    - 手动：复制 `config.local.example.json` 为 `config.local.json`，填入 `warthunder.com` 登录后的 `identity_sid`。
    - 自动：复制 `login.local.example.json` 为 `login.local.json`，填写专供 Bot 使用的 Gaijin 小号邮箱和密码。Windows 需安装 Microsoft Edge。若目录里已有旧账号的 `config.local.json`，先删除该文件，Bot 才会立即用小号登录。Bot 使用 `work/gaijin_edge_profile/` 作为独立浏览器配置；首次缺少 Cookie 或网站登录失效时才尝试登录，并将新 Cookie 写入本目录的 `config.local.json`。失败后 10 分钟内不会再次尝试，避免连续提交密码。普通登录会在后台进行；如网站要求验证码或两步验证，在本目录运行 `.venv\Scripts\python.exe gaijin_login.py`，在出现的 Edge 窗口里人工完成验证。验证结束后重新使用命令；若监听因认证失败已停止，重新启动 `/wtwatch`。
