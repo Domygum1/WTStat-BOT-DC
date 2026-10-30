@@ -15,7 +15,7 @@ from discord import app_commands
 from fastapi import HTTPException
 
 import app as wtstat
-from bot_image import render_match_png
+from bot_image_canvas import render_match_png
 from bot_watch import WATCH_INTERVAL, WatchJob, WatchStore, merge_scan, parse_duration
 
 
@@ -103,7 +103,7 @@ def image_data(summary: dict) -> dict:
     """Map WTStat's low-download result summary to the PNG renderer's fields."""
     return {
         **{key: summary.get(key) for key in
-           ("sid", "start_utc", "map", "battle_group", "game_mode", "match_br")},
+           ("sid", "start_utc", "map", "battle_group", "game_mode", "match_br", "source", "parts")},
         "players": [
             {"uid": player.get("uid"), "name": player.get("name"),
              "team": player.get("team"), "max_br": player.get("max_br"),

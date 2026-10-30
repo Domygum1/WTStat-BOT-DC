@@ -8,13 +8,13 @@
 - `/wtmatch session_id`：按十进制或 16 位十六进制 Session ID 直接输出战绩 PNG。搜索按钮 10 分钟后失效，但 Session ID 命令始终可用。
 - `/wtwatch player_name duration`：监听本频道的一个玩家；`duration` 可省略，默认 `1h`，也支持 `30m`、`2h`、`30分钟` 等，范围为 1 分钟至 24 小时。Bot 每 15 秒向官网刷新最近对局列表，发现新场次后在本频道发送该局战绩 PNG。启动时已有对局作为基线，不补发旧图。同一频道再次使用会替换原监听；Bot 重启后会恢复尚未到期的监听。
 - `/wtunwatch`：提前停止本频道的监听。
-- 图片包含时间、地图、模式、对局权重、两队玩家的得分、击杀、死亡、助攻、载具和 BR；搜索时高亮对应玩家。
+- 图片使用 WTStat 当前“保存战局图片”的同一套画布渲染器：2400 像素宽，包含队伍与玩家旗帜、醒目的得分区、结算数据、载具和 BR；搜索时高亮对应玩家。渲染器和旗帜资源已复制到本项目，运行时无需启动或读取 WTStat。
 
 首次读取某场时通常只下载 Replay 的结算分段并解析，之后数据和 Replay 文件缓存在本项目的 `data/`、`cache/` 中。Bot 内部串行查询，并将自身请求间隔设为至少 1.5 秒。它不启动 WTStat 或 WTStat all，不占用它们的端口，也不读写它们的数据库或缓存。持续监听会每 15 秒向官网发起一次查询；多个程序同时访问 Gaijin 官网时仍可能遇到官网统一的频率限制，不能保证完全不影响其他查询。官网的搜索范围和 Replay 保留期限由 Gaijin 决定。
 
 ## 首次配置
 
-需要 Windows、Python 3.12+、网络连接，以及 Discord Bot Token。
+需要 Windows、Microsoft Edge、Python 3.12+、网络连接，以及 Discord Bot Token。Edge 用于在本机生成与 WTStat 一致的 PNG；不会打开你的 Firefox 配置。
 
 1. 在 [Discord Developer Portal](https://discord.com/developers/applications) 创建应用和 Bot，复制 Bot Token。将 Bot 安装到服务器时选择 `bot` 和 `applications.commands`，授予“发送消息”和“附加文件”权限。
 2. 复制 `discord.local.example.json` 为 `discord.local.json`，填入 Token。建议填写数字 `guild_id`，命令会在该服务器同步。可在 Discord 开启开发者模式后右键服务器复制 ID。留空会同步全局命令，显示可能需要一些时间。
@@ -41,8 +41,8 @@ powershell -ExecutionPolicy Bypass -File .\enable_discord_autostart.ps1
 ## 项目组成与许可
 
 - `app.py`：随项目内置的 WTStat 搜索、下载、Replay 解析和缓存代码。Bot 直接调用其中的函数，网页路由无需运行。
-- `bot_image.py`、`discord_bot.py`：Discord 命令与 PNG 图片生成。
+- `bot_image_canvas.py`、`battle_image_renderer.js`、`image_assets/flags/`、`discord_bot.py`：Discord 命令及 WTStat 战局图片画布与旗帜资源。
 - `bin/wtstat_results.exe` 和 `vendor/wrpl-inspector/`：Replay 解析器及对应源码。
 - `data/wiki_vehicles.csv`、`data/missile_names.csv` 和 `vendor/WT-Plotter/resources/translations/`：本地资料。
 
-项目代码及解析器按根目录 `LICENSE` 和 `vendor/wrpl-inspector/LICENSE` 中的 AGPL-3.0 条款提供。WT-Plotter 翻译文件保留其原有许可证，见 `vendor/WT-Plotter/LICENSE` 与 `LICENSE.txt`。
+项目代码及解析器按根目录 `LICENSE` 和 `vendor/wrpl-inspector/LICENSE` 中的 AGPL-3.0 条款提供。旗帜资源保留其 MIT 许可证，见 `image_assets/flags/LICENSE-flag-icons.txt`。WT-Plotter 翻译文件保留其原有许可证，见 `vendor/WT-Plotter/LICENSE` 与 `LICENSE.txt`。

@@ -12,7 +12,7 @@ from PIL import Image
 import app
 import discord_bot
 import gaijin_login
-from bot_image import render_match_png
+from bot_image_canvas import render_match_png
 from bot_watch import WatchStore, merge_scan, parse_duration
 from discord_bot import image_data, search_text
 
@@ -40,7 +40,7 @@ class BotTests(unittest.TestCase):
         }
         image = Image.open(io.BytesIO(render_match_png(match, "101")))
         self.assertEqual(image.format, "PNG")
-        self.assertEqual(image.width, 1500)
+        self.assertEqual(image.width, 2400)
         self.assertGreater(image.height, 300)
 
     def test_search_reply_fits_discord_limit(self):

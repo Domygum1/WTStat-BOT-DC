@@ -1305,7 +1305,8 @@ def match_statistics(session: str):
                         "squad_id": player.get("squad_id"), "auto_squad": player.get("auto_squad"),
                         "squad_members": player.get("squad_members"),
                         "lineup_country": next(iter(countries)) if configured and len(countries) == 1 else None,
-                        "configured_vehicles": [{"code": v.get("code"), "name": v.get("name")}
+                        "configured_vehicles": [{"code": v.get("code"), "name": v.get("name"),
+                                                 "country": v.get("country")}
                                                 for v in configured],
                         "stats": {field: player.get(field) for field in
                                   ("kills", "groundKills", "humanKills", "deaths", "assists", "score",
@@ -1328,4 +1329,5 @@ def match_statistics(session: str):
     return {"sid": sid, "game_mode": data["game_mode"], "battle_group": data["battle_group"],
             "match_br": match_br, "start_utc": data.get("start_utc"), "map": data.get("map"),
             "players": summary,
-            "br_complete": match_br is not None, "source": "Replay 结算 BLK"}
+            "br_complete": match_br is not None, "source": "Replay 结算 BLK",
+            "parts": data.get("parts")}
