@@ -57,6 +57,11 @@ class BotTests(unittest.TestCase):
         self.assertEqual(data["players"][0]["configured"][0]["name"], "F-16")
         self.assertEqual(data["players"][0]["score"], 1200)
 
+    def test_vehicle_name_marker_is_cleaned(self):
+        self.assertEqual(app.display_vehicle_name("␗Su-30MKK"), "Su-30MKK")
+        self.assertEqual(app.display_vehicle_name("▄F-100D"), "F-100D")
+        self.assertEqual(app.display_vehicle_name("F-16A"), "F-16A")
+
     def test_watch_duration_and_new_match_queue_survive_restart(self):
         self.assertEqual(parse_duration("1h"), 3600)
         self.assertEqual(parse_duration("30分钟"), 1800)
