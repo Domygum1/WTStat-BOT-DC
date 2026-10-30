@@ -166,11 +166,11 @@ def replay_api_page(payload):
         r.close()
 
 
-def site_page(query, page, kind="USERNAME"):
+def site_page(query, page, kind="USERNAME", *, force_refresh=False):
     cache_key = f"api:{kind}:{query}"
     with closing(db()) as c:
         row = c.execute("SELECT * FROM pages WHERE query=? AND page=?", (cache_key, page)).fetchone()
-        if row and time.time() - row["fetched"] < 300:
+        if not force_refresh and row and time.time() - row["fetched"] < 300:
             cached = json.loads(row["data"])
             if cached.get("total") != 0 or cached.get("verified_empty"):
                 return cached
