@@ -340,7 +340,15 @@ def main():
             return
         await interaction.response.send_message("已停止本频道的玩家监听。")
 
-    bot.run(token, reconnect=True, log_handler=None)
+    try:
+        bot.run(token, reconnect=True, log_handler=None)
+    except discord.Forbidden as error:
+        if guild_id and error.code == 50001:
+            raise SystemExit(
+                f"Bot 无法访问 Discord 服务器 {guild_id}。请确认这是服务器 ID，"
+                "并将 Bot 安装到该服务器，授权 bot 和 applications.commands。"
+            ) from None
+        raise
 
 
 if __name__ == "__main__":

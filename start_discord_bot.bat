@@ -1,5 +1,7 @@
 @echo off
 setlocal
+chcp 65001 >nul
+set "PYTHONIOENCODING=utf-8"
 cd /d "%~dp0"
 title WTStat Discord Bot
 if not exist ".venv\Scripts\python.exe" (
@@ -16,8 +18,9 @@ if not exist "bin\wtstat_results.exe" (
   goto :fail
 )
 ".venv\Scripts\python.exe" discord_bot.py
-exit /b %errorlevel%
+if errorlevel 1 goto :fail
+exit /b 0
 :fail
-echo WTStat Discord Bot setup failed. Check the message above.
+echo WTStat Discord Bot stopped with an error. Check the message above.
 pause
 exit /b 1
