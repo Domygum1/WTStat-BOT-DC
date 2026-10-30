@@ -18,7 +18,7 @@ from bot_image import render_match_png
 
 CONFIG_PATH = Path(__file__).with_name("discord.local.json")
 log = logging.getLogger("wtstat.discord")
-detail_lock = asyncio.Lock()
+request_lock = asyncio.Lock()
 
 
 def load_config():
@@ -71,8 +71,9 @@ def search_text(query, result):
 async def send_match(interaction: discord.Interaction, session: str, highlight: str | None = None):
     await interaction.response.defer(thinking=True)
     try:
-        async with detail_lock:
-            data = await asyncio.to_thread(wtstat.detail, session)
+        async with request_lock:
+            summary = await asyncio.to_thread(wtstat.match_statistics, session)
+            data = image_data(summary)
             png = await asyncio.to_thread(render_match_png, data, highlight)
         filename = f"WTStat_{data['sid']}.png"
         official_url = f"https://warthunder.com/en/tournament/replay/{int(data['sid'], 16)}"
@@ -84,6 +85,21 @@ async def send_match(interaction: discord.Interaction, session: str, highlight: 
     except Exception as error:
         await interaction.followup.send(display_error(error), ephemeral=True,
                                         allowed_mentions=discord.AllowedMentions.none())
+
+
+def image_data(summary: dict) -> dict:
+    """Map WTStat's low-download result summary to the PNG renderer's fields."""
+    return {
+        **{key: summary.get(key) for key in
+           ("sid", "start_utc", "map", "battle_group", "game_mode", "match_br")},
+        "players": [
+            {"uid": player.get("uid"), "name": player.get("name"),
+             "team": player.get("team"), "max_br": player.get("max_br"),
+             "configured": player.get("configured_vehicles") or [],
+             **(player.get("stats") or {})}
+            for player in summary.get("players") or []
+        ],
+    }
 
 
 class MatchButton(discord.ui.Button):
@@ -135,7 +151,8 @@ def main():
             return
         await interaction.response.defer(thinking=True)
         try:
-            result = await asyncio.to_thread(wtstat.search, query, 0, None, None)
+            async with request_lock:
+                result = await asyncio.to_thread(wtstat.search, query, 0, None, None)
             if result.get("mode") == "session":
                 await interaction.followup.send("这是 Session ID，请用 `/wtmatch session_id` 查看战绩图片。", ephemeral=True)
                 return
@@ -147,7 +164,7 @@ def main():
             await interaction.followup.send(display_error(error), ephemeral=True,
                                             allowed_mentions=discord.AllowedMentions.none())
 
-    @bot.tree.command(name="wtmatch", description="按 Replay Session ID 输出完整战绩图片")
+    @bot.tree.command(name="wtmatch", description="按 Replay Session ID 输出战绩图片")
     @app_commands.describe(session_id="对局的十进制或 16 位十六进制 Session ID")
     async def wtmatch(interaction: discord.Interaction, session_id: str):
         await send_match(interaction, session_id.strip())

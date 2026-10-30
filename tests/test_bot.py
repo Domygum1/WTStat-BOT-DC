@@ -4,7 +4,7 @@ import unittest
 from PIL import Image
 
 from bot_image import render_match_png
-from discord_bot import search_text
+from discord_bot import image_data, search_text
 
 
 class BotTests(unittest.TestCase):
@@ -32,6 +32,14 @@ class BotTests(unittest.TestCase):
                   "map": "x" * 1000, "vehicles": "aircraft", "game_mode": "realistic"}
                  for i in range(15)]
         self.assertLessEqual(len(search_text("player", {"items": items, "total": 500})), 2000)
+
+    def test_statistics_summary_maps_to_image(self):
+        data = image_data({"sid": "01123a9d000c36dd", "players": [
+            {"uid": "101", "name": "甲", "team": 1, "max_br": 13.7,
+             "configured_vehicles": [{"name": "F-16"}],
+             "stats": {"score": 1200, "kills": 2}}]})
+        self.assertEqual(data["players"][0]["configured"][0]["name"], "F-16")
+        self.assertEqual(data["players"][0]["score"], 1200)
 
 if __name__ == "__main__":
     unittest.main()

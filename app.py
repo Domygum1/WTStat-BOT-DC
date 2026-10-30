@@ -109,7 +109,7 @@ def request(url, *, auth=False, stream=False, method="GET", payload=None, header
     if auth and not jar:
         raise HTTPException(401, "官网搜索需要 identity_sid。请按 README 创建 config.local.json。")
     with LOCK:
-        wait = 0.5 - (time.monotonic() - LAST_REQUEST)
+        wait = 1.5 - (time.monotonic() - LAST_REQUEST)
         if wait > 0:
             time.sleep(wait)
         LAST_REQUEST = time.monotonic()
