@@ -41,8 +41,8 @@ powershell -ExecutionPolicy Bypass -File .\enable_discord_autostart.ps1
 ## 项目组成与许可
 
 - `app.py`：随项目内置的 WTStat 搜索、下载、Replay 解析和缓存代码。Bot 直接调用其中的函数，网页路由无需运行。
-- `bot_image_canvas.py`、`battle_image_renderer.js`、`image_assets/flags/`、`discord_bot.py`：Discord 命令及 WTStat 战局图片画布与旗帜资源。
+- `bot_image_canvas.py`、`battle_image_renderer.js`、`image_assets/flags/`、`image_assets/fonts/`、`discord_bot.py`：Discord 命令及 WTStat 战局图片画布、旗帜与载具标志字体。
 - `bin/wtstat_results.exe` 和 `vendor/wrpl-inspector/`：Replay 解析器及对应源码。
 - `data/wiki_vehicles.csv`、`data/missile_names.csv` 和 `vendor/WT-Plotter/resources/translations/`：本地资料。
 
-项目代码及解析器按根目录 `LICENSE` 和 `vendor/wrpl-inspector/LICENSE` 中的 AGPL-3.0 条款提供。旗帜资源保留其 MIT 许可证，见 `image_assets/flags/LICENSE-flag-icons.txt`。WT-Plotter 翻译文件保留其原有许可证，见 `vendor/WT-Plotter/LICENSE` 与 `LICENSE.txt`。
+项目代码及解析器按根目录 `LICENSE` 和 `vendor/wrpl-inspector/LICENSE` 中的 AGPL-3.0 条款提供。旗帜资源保留其 MIT 许可证，见 `image_assets/flags/LICENSE-flag-icons.txt`。载具名称前的游戏标志使用 Wiki 的 `WTSymbols` 字体，来源：<https://wiki.warthunder.com/fonts/symbols_skyquake.bfc9728c6a6bc73f209a.ttf>；该字体不属于本项目的 AGPL 源码许可。WT-Plotter 翻译文件保留其原有许可证，见 `vendor/WT-Plotter/LICENSE` 与 `LICENSE.txt`。

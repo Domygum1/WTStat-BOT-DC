@@ -346,8 +346,7 @@ def vehicles(q: str = "", category: str = "", country: str = "", vehicle_id: str
             "FROM wiki_vehicles" + where + " ORDER BY " + order + " LIMIT ? OFFSET ?",
             [*params, limit, offset],
         ).fetchall()
-    items = [{**dict(row), "name": display_vehicle_name(row["name"])} for row in rows]
-    return {"items": items, "total": total,
+    return {"items": [dict(row) for row in rows], "total": total,
             "next_offset": offset + len(rows) if offset + len(rows) < total else None}
 
 
@@ -744,31 +743,18 @@ def wiki_catalog():
         )}
 
 
-VEHICLE_NAME_MARKERS = frozenset("▄␗◔▀▂\uf059◄◊▅▃◘◌◢◍␙◥◗◐○␠◆◡⋠")
-
-
-def display_vehicle_name(name):
-    """Hide game-specific flag glyphs that ordinary fonts cannot render correctly."""
-    if not isinstance(name, str):
-        return name
-    while name and name[0] in VEHICLE_NAME_MARKERS:
-        name = name[1:]
-    return name.lstrip()
-
-
 def vehicle(code):
     wiki = wiki_catalog().get(code.casefold())
     if wiki:
-        return {"name": display_vehicle_name(wiki["name"]), "code": code,
+        return {"name": wiki["name"], "code": code,
                 "country": COUNTRIES.get(wiki["research_country_code"]) or wiki["research_country"],
                 "research_country": wiki["research_country"],
                 "operator_country": wiki["operator_country"]}
     if code in VEHICLE_OVERRIDES:
         name, country = VEHICLE_OVERRIDES[code]
-        return {"name": display_vehicle_name(name), "code": code, "country": COUNTRIES[country]}
+        return {"name": name, "code": code, "country": COUNTRIES[country]}
     item = catalog()[0].get(code) or {}
-    return {"name": display_vehicle_name(item.get("en") or code), "code": code,
-            "country": COUNTRIES.get(item.get("country"))}
+    return {"name": item.get("en") or code, "code": code, "country": COUNTRIES.get(item.get("country"))}
 
 
 def replay_kill_events(carved, players):
@@ -1319,7 +1305,7 @@ def match_statistics(session: str):
                         "squad_id": player.get("squad_id"), "auto_squad": player.get("auto_squad"),
                         "squad_members": player.get("squad_members"),
                         "lineup_country": next(iter(countries)) if configured and len(countries) == 1 else None,
-                        "configured_vehicles": [{"code": v.get("code"), "name": display_vehicle_name(v.get("name")),
+                        "configured_vehicles": [{"code": v.get("code"), "name": v.get("name"),
                                                  "country": v.get("country")}
                                                 for v in configured],
                         "stats": {field: player.get(field) for field in

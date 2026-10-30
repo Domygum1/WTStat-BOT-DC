@@ -31,7 +31,7 @@ class BotTests(unittest.TestCase):
             "players": [
                 {"uid": "101", "name": "甲", "team": 1, "score": 1200, "kills": 2,
                  "groundKills": 0, "deaths": 1, "assists": 1,
-                 "configured": [{"name": "F-16"}], "max_br": 13.7},
+                 "configured": [{"name": "␗Su-30MKK"}], "max_br": 13.7},
                 {"uid": "202", "name": "乙", "team": 2, "score": 900, "kills": 1,
                  "groundKills": 0, "deaths": 1, "assists": 0,
                  "configured": [{"name": "MiG-29"}], "max_br": 13.7},
@@ -56,11 +56,6 @@ class BotTests(unittest.TestCase):
              "stats": {"score": 1200, "kills": 2}}]})
         self.assertEqual(data["players"][0]["configured"][0]["name"], "F-16")
         self.assertEqual(data["players"][0]["score"], 1200)
-
-    def test_vehicle_name_marker_is_cleaned(self):
-        self.assertEqual(app.display_vehicle_name("␗Su-30MKK"), "Su-30MKK")
-        self.assertEqual(app.display_vehicle_name("▄F-100D"), "F-100D")
-        self.assertEqual(app.display_vehicle_name("F-16A"), "F-16A")
 
     def test_watch_duration_and_new_match_queue_survive_restart(self):
         self.assertEqual(parse_duration("1h"), 3600)

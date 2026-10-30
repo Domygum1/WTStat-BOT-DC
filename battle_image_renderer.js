@@ -6,6 +6,7 @@
   const GAP = 24;
   const PANEL_WIDTH = (WIDTH - MARGIN * 2 - GAP) / 2;
   const FONT = '"Microsoft YaHei", "Segoe UI", sans-serif';
+  const VEHICLE_FONT = `WTSymbols, ${FONT}`;
   const FLAG_CODES = { '美国': 'us', '德国': 'de', '苏联': 'su', '英国': 'gb', '日本': 'jp',
     '意大利': 'it', '法国': 'fr', '瑞典': 'se', '中国': 'cn', '以色列': 'il' };
   const COLORS = {
@@ -101,7 +102,7 @@
     const contentWidth = PANEL_WIDTH - 64;
     ctx.font = `700 30px ${FONT}`;
     const name = wrap(ctx, value(player.name), contentWidth - 210);
-    ctx.font = `18px ${FONT}`;
+    ctx.font = `18px ${VEHICLE_FONT}`;
     const vehicles = wrap(ctx, `载具  ${(player.configured || []).map(item => value(item.name)).join(' · ') || 'N/A'}`, contentWidth);
     ctx.font = `16px ${FONT}`;
     const other = wrap(ctx, `助攻 ${value(player.assists)}   ·   UID ${value(player.uid)}   ·   ${aiText(player)}   ·   占点 ${value(player.captureZone)}   ·   击杀队友 ${value(player.teamKills)}`, contentWidth);
@@ -186,7 +187,7 @@
         ctx.fillStyle = index === 0 ? COLORS.gold : COLORS.text;
         ctx.fillText(value(amount), metricX + 12, metricsY + 52);
       });
-      ctx.font = `18px ${FONT}`;
+      ctx.font = `18px ${VEHICLE_FONT}`;
       const afterVehicles = drawLines(ctx, row.vehicles, left, metricsY + 62 + 12 + 18, 24, COLORS.text);
       ctx.font = `16px ${FONT}`;
       drawLines(ctx, row.other, left, afterVehicles + 5, 22, COLORS.muted);
@@ -201,6 +202,7 @@
   }
 
   async function render(data, highlightUid = null) {
+    await document.fonts.load('18px WTSymbols', '␗▄◔');
     const flagImages = await loadFlags(data.players || []);
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
