@@ -13,6 +13,7 @@
     background: '#101821', panel: '#1b2836', card: '#162330', line: '#34485c',
     text: '#eef4fa', muted: '#b2c4d3', blue: '#91c7f4', red: '#f2a6a5',
     gold: '#ffd17d', highlight: '#344337', highlightLine: '#e8c365',
+    squadMate: '#283a34', squadMateLine: '#78ad88', squadMateText: '#a4cdb0',
   };
 
   function value(item) {
@@ -124,7 +125,7 @@
       height: 80 + (rows.length ? rows.reduce((sum, row) => sum + row.height + 8, 0) : 66) + 12 };
   }
 
-  function drawTeam(ctx, layout, x, y, highlightUid, flagImages) {
+  function drawTeam(ctx, layout, x, y, highlightUid, squadMateUids, flagImages) {
     const blue = String(layout.team) === '1';
     const red = String(layout.team) === '2';
     const accent = blue ? COLORS.blue : red ? COLORS.red : COLORS.muted;
@@ -151,11 +152,15 @@
     }
     for (const row of layout.rows) {
       const selected = highlightUid !== null && String(row.player.uid) === highlightUid;
-      roundRect(ctx, x + 14, rowY, PANEL_WIDTH - 28, row.height, 9, selected ? COLORS.highlight : COLORS.card);
-      if (selected) roundRect(ctx, x + 14, rowY, 5, row.height, 2, COLORS.highlightLine);
+      const squadMate = !selected && squadMateUids.has(String(row.player.uid));
+      roundRect(ctx, x + 14, rowY, PANEL_WIDTH - 28, row.height, 9,
+        selected ? COLORS.highlight : squadMate ? COLORS.squadMate : COLORS.card);
+      if (selected || squadMate) roundRect(ctx, x + 14, rowY, 5, row.height, 2,
+        selected ? COLORS.highlightLine : COLORS.squadMateLine);
       const left = x + 32;
       ctx.font = `700 30px ${FONT}`;
-      drawLines(ctx, row.name, left, rowY + 39, 38, selected ? COLORS.gold : COLORS.text);
+      drawLines(ctx, row.name, left, rowY + 39, 38,
+        selected ? COLORS.gold : squadMate ? COLORS.squadMateText : COLORS.text);
       const separatorX = left + ctx.measureText(row.name[row.name.length - 1]).width + 9;
       const nameBaseline = rowY + 39 + (row.name.length - 1) * 38;
       ctx.fillText('·', separatorX, nameBaseline);
@@ -167,7 +172,7 @@
         ctx.fillText('N/A', separatorX + 23, nameBaseline);
       }
       ctx.font = `700 20px ${FONT}`;
-      ctx.fillStyle = selected ? COLORS.gold : accent;
+      ctx.fillStyle = selected ? COLORS.gold : squadMate ? COLORS.squadMateText : accent;
       ctx.textAlign = 'right';
       ctx.fillText(`BR ${rating(row.player.max_br)}`, x + PANEL_WIDTH - 32, rowY + 38);
       ctx.textAlign = 'left';
@@ -179,7 +184,8 @@
       const metricGap = 10, metricWidth = (PANEL_WIDTH - 64 - metricGap * 3) / 4;
       metrics.forEach(([label, amount], index) => {
         const metricX = left + index * (metricWidth + metricGap);
-        roundRect(ctx, metricX, metricsY, metricWidth, 62, 6, selected ? '#405143' : '#213245');
+        roundRect(ctx, metricX, metricsY, metricWidth, 62, 6,
+          selected ? '#405143' : squadMate ? '#30463d' : '#213245');
         ctx.font = `16px ${FONT}`;
         ctx.fillStyle = COLORS.muted;
         ctx.fillText(label, metricX + 12, metricsY + 21);
@@ -204,6 +210,20 @@
   async function render(data, highlightUid = null) {
     await document.fonts.load('18px WTSymbols', '␗▄◔');
     const flagImages = await loadFlags(data.players || []);
+    const selectedPlayer = (data.players || []).find(player =>
+      highlightUid !== null && String(player.uid) === String(highlightUid));
+    const squadMateUids = new Set();
+    if (selectedPlayer && selectedPlayer.auto_squad === false &&
+        selectedPlayer.team !== null && selectedPlayer.team !== undefined &&
+        selectedPlayer.squad_id !== null && selectedPlayer.squad_id !== undefined) {
+      for (const player of data.players || []) {
+        if (String(player.uid) !== String(highlightUid) && player.auto_squad === false &&
+            String(player.team) === String(selectedPlayer.team) &&
+            String(player.squad_id) === String(selectedPlayer.squad_id)) {
+          squadMateUids.add(String(player.uid));
+        }
+      }
+    }
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     if (!ctx) throw new Error('浏览器无法创建图片画布。');
@@ -265,8 +285,8 @@
     ctx.fillStyle = COLORS.muted;
     ctx.fillText(`官网对局页  https://warthunder.com/en/tournament/replay/${BigInt(`0x${data.sid}`)}`, MARGIN, metaY + 25);
     for (const row of teamRows) {
-      drawTeam(ctx, teams[row.index], MARGIN, row.y, highlightUid, flagImages);
-      if (teams[row.index + 1]) drawTeam(ctx, teams[row.index + 1], MARGIN + PANEL_WIDTH + GAP, row.y, highlightUid, flagImages);
+      drawTeam(ctx, teams[row.index], MARGIN, row.y, highlightUid, squadMateUids, flagImages);
+      if (teams[row.index + 1]) drawTeam(ctx, teams[row.index + 1], MARGIN + PANEL_WIDTH + GAP, row.y, highlightUid, squadMateUids, flagImages);
     }
     return canvas;
   }

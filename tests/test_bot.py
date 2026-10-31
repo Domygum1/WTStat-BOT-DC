@@ -53,10 +53,34 @@ class BotTests(unittest.TestCase):
     def test_statistics_summary_maps_to_image(self):
         data = image_data({"sid": "01123a9d000c36dd", "players": [
             {"uid": "101", "name": "甲", "team": 1, "max_br": 13.7,
+             "squad_id": 42, "auto_squad": False,
              "configured_vehicles": [{"name": "F-16"}],
              "stats": {"score": 1200, "kills": 2}}]})
         self.assertEqual(data["players"][0]["configured"][0]["name"], "F-16")
         self.assertEqual(data["players"][0]["score"], 1200)
+        self.assertEqual(data["players"][0]["squad_id"], 42)
+        self.assertIs(data["players"][0]["auto_squad"], False)
+
+    def test_only_manual_squadmates_receive_soft_green_highlight(self):
+        players = [
+            {"uid": "101", "name": "目标玩家", "team": 1, "squad_id": 42, "auto_squad": False, "score": 1200},
+            {"uid": "102", "name": "主动组队队友", "team": 1, "squad_id": 42, "auto_squad": False, "score": 1100},
+            {"uid": "103", "name": "自动组队玩家", "team": 1, "squad_id": 42, "auto_squad": True, "score": 1000},
+            {"uid": "104", "name": "其他玩家", "team": 1, "squad_id": 99, "auto_squad": False, "score": 900},
+            {"uid": "105", "name": "对方队伍", "team": 2, "squad_id": 42, "auto_squad": False, "score": 800},
+        ]
+        image = Image.open(io.BytesIO(render_match_png({
+            "sid": "01123a9d000c36dd", "players": players,
+        }, "101"))).convert("RGB")
+
+        def stripe_count(x, color):
+            matches = [image.getpixel((x, y)) == color for y in range(image.height)]
+            return sum(current and (y == 0 or not matches[y - 1])
+                       for y, current in enumerate(matches))
+
+        self.assertEqual(stripe_count(60, (120, 173, 136)), 1)
+        self.assertEqual(stripe_count(60, (232, 195, 101)), 1)
+        self.assertEqual(stripe_count(1228, (120, 173, 136)), 0)
 
     def test_watch_duration_and_new_match_queue_survive_restart(self):
         self.assertEqual(parse_duration("1h"), 3600)

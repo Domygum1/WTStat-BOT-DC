@@ -107,6 +107,7 @@ def image_data(summary: dict) -> dict:
         "players": [
             {"uid": player.get("uid"), "name": player.get("name"),
              "team": player.get("team"), "max_br": player.get("max_br"),
+             "squad_id": player.get("squad_id"), "auto_squad": player.get("auto_squad"),
              "configured": player.get("configured_vehicles") or [],
              **(player.get("stats") or {})}
             for player in summary.get("players") or []
