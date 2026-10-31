@@ -306,8 +306,8 @@ def main():
 
     @bot.tree.command(name="wtwatch", description="每 15 秒检查玩家新对局并在本频道发送战绩图片")
     @app_commands.describe(player_name="要监听的玩家昵称或数字 UID",
-                           duration="监听时间，例如 30m、1h、2h；默认 1h")
-    async def wtwatch(interaction: discord.Interaction, player_name: str, duration: str = "1h"):
+                           duration="监听小时数，只填数字；例如 1 或 0.5，默认 1")
+    async def wtwatch(interaction: discord.Interaction, player_name: str, duration: float = 1.0):
         player = player_name.strip()
         if not player or len(player) > 64 or not interaction.channel_id:
             await interaction.response.send_message("请输入不超过 64 个字符的玩家昵称，并在频道中使用命令。", ephemeral=True)

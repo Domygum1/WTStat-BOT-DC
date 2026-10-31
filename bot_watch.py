@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import json
-import re
+import math
 import sqlite3
 import time
 from contextlib import contextmanager
@@ -14,18 +14,13 @@ from uuid import uuid4
 WATCH_INTERVAL = 15
 
 
-def parse_duration(value: str) -> int:
-    """Accept durations such as 30m, 1h, 1.5h, 30分钟, or 1小时."""
-    match = re.fullmatch(r"\s*(\d+(?:\.\d+)?)\s*(m|min|分钟|h|hr|小时)\s*", value, re.I)
-    if not match:
-        raise ValueError("监听时间请写成 30m、1h、2h、30分钟或 1小时。")
-    multiplier = 3600 if match.group(2).lower() in {"h", "hr", "小时"} else 60
-    try:
-        seconds = int(float(match.group(1)) * multiplier)
-    except (OverflowError, ValueError) as error:
-        raise ValueError("监听时间须在 1 分钟至 24 小时之间。") from error
+def parse_duration(hours: float) -> int:
+    """Convert a numeric number of hours to seconds (for example, 0.5 -> 30 minutes)."""
+    if isinstance(hours, bool) or not isinstance(hours, (int, float)) or not math.isfinite(hours):
+        raise ValueError("监听时间请只填小时数，例如 1 或 0.5。")
+    seconds = round(hours * 3600)
     if not 60 <= seconds <= 24 * 3600:
-        raise ValueError("监听时间须在 1 分钟至 24 小时之间。")
+        raise ValueError("监听时间须在 1 分钟至 24 小时之间，只填数字。")
     return seconds
 
 

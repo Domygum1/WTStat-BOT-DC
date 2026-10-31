@@ -83,10 +83,12 @@ class BotTests(unittest.TestCase):
         self.assertEqual(stripe_count(1228, (120, 173, 136)), 0)
 
     def test_watch_duration_and_new_match_queue_survive_restart(self):
-        self.assertEqual(parse_duration("1h"), 3600)
-        self.assertEqual(parse_duration("30分钟"), 1800)
+        self.assertEqual(parse_duration(1), 3600)
+        self.assertEqual(parse_duration(0.5), 1800)
         with self.assertRaises(ValueError):
-            parse_duration("25h")
+            parse_duration(25)
+        with self.assertRaises(ValueError):
+            parse_duration("1h")
         with self.temp_directory() as directory:
             path = Path(directory) / "watch.sqlite3"
             store = WatchStore(path)
@@ -176,6 +178,10 @@ class BotTests(unittest.TestCase):
             bot = run.call_args.args[0]
             self.assertEqual({command.name for command in bot.tree.get_commands()},
                              {"wtsearch", "wtmatch", "wtwatch", "wtunwatch"})
+            duration = next(parameter for parameter in bot.tree.get_command("wtwatch").parameters
+                            if parameter.name == "duration")
+            self.assertEqual(duration.type, discord_bot.discord.AppCommandOptionType.number)
+            self.assertEqual(duration.default, 1.0)
 
 if __name__ == "__main__":
     unittest.main()
