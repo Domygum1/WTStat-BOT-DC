@@ -915,7 +915,7 @@ def recover_saved_lineups(sid, players, files):
         matching = ((snapshot.get("results") or {}).get("matchingInfo") or {})
         for uid, player in tuple(missing.items()):
             crafts = (matching.get(uid) or {}).get("crafts_info") or {}
-            configured = [vehicle(craft["name"]) for key, craft in sorted(
+            configured = [craft_vehicle(craft) for key, craft in sorted(
                 crafts.items(), key=lambda item: int(item[0][5:])
                 if re.fullmatch(r"array\d+", item[0]) else 9999)
                           if isinstance(craft, dict) and craft.get("name")]
@@ -1006,7 +1006,7 @@ def parse_replay(sid, files, *, include_log=True, persist=True):
         for key in sorted(crafts, key=lambda x: int(x[5:]) if re.fullmatch(r"array\d+", x) else 9999):
             item = crafts[key]
             if isinstance(item, dict) and item.get("name"):
-                configured.append(vehicle(item["name"]))
+                configured.append(craft_vehicle(item))
         players.append({"uid": uid, "name": p.get("name"), "team": p.get("team"),
                         "squad_id": p.get("squadId"), "auto_squad": p.get("autoSquad"),
                         "spawned": [], "configured": configured,
@@ -1108,30 +1108,61 @@ def complete_cached_squads(sid, data, connection, table):
     return data
 
 
-def vehicle_battle_rating(code, mode, group):
-    """Use the Wiki BR for this match; aircraft have separate ground RB/SB BRs."""
-    if mode not in {"arcade", "realistic", "simulation"}:
+def mrank_to_br(mrank):
+    """Convert the replay's matchmaking rank to the displayed battle rating."""
+    if isinstance(mrank, bool) or not isinstance(mrank, int) or mrank < 0:
         return None
-    if group not in {"aircraft", "aviation", "air", "tank", "ground", "ground_vehicles",
-                     "ship", "ships", "fleet", "naval", "boat"}:
-        return None
-    item = wiki_catalog().get(str(code).casefold())
-    if not item:
-        return None
-    column = {"arcade": "br_ab", "realistic": "br_rb", "simulation": "br_sb"}[mode]
-    if item["category"] == "aviation" and group in {"tank", "ground", "ground_vehicles"}:
-        column = {"realistic": "br_ground_rb", "simulation": "br_ground_sb"}.get(mode, column)
-    return item[column]
+    return (10 + 10 * (mrank // 3) + (0, 3, 7)[mrank % 3]) / 10
+
+
+def craft_vehicle(craft):
+    item = vehicle(craft["name"])
+    item["mrank"] = craft.get("mrank")
+    return item
+
+
+def recover_cached_mranks(sid, players):
+    """Upgrade old cached lineups from a retained result segment, when possible."""
+    if not any(player.get("configured") and any(
+            mrank_to_br(item.get("mrank")) is None for item in player["configured"])
+            for player in players):
+        return False
+    files = sorted((REPLAYS / sid).glob("*.wrpl"))
+    if not files:
+        return False
+    try:
+        raw = json.loads(subprocess.run(
+            [str(PARSER), str(files[-1])], capture_output=True, text=True,
+            encoding="utf-8", errors="replace", timeout=40, check=True).stdout)
+    except (OSError, subprocess.SubprocessError, ValueError):
+        return False
+    if (raw.get("header") or {}).get("session_id") != sid:
+        return False
+    matching = ((raw.get("results") or {}).get("matchingInfo") or {})
+    changed = False
+    for player in players:
+        if not player.get("configured") or all(
+                mrank_to_br(item.get("mrank")) is not None for item in player["configured"]):
+            continue
+        crafts = (matching.get(str(player.get("uid"))) or {}).get("crafts_info") or {}
+        fresh = [craft_vehicle(craft) for key, craft in sorted(
+            crafts.items(), key=lambda item: int(item[0][5:])
+            if re.fullmatch(r"array\d+", item[0]) else 9999)
+                 if isinstance(craft, dict) and craft.get("name")]
+        if fresh:
+            player["configured"] = fresh
+            changed = True
+    return changed
 
 
 VEHICLE_CATEGORY_ORDER = {"ground": 0, "aviation": 1, "helicopters": 2,
                           "boats": 3, "ships": 3}
 
 
-def vehicle_lineup_sort_key(item, mode, group):
+def vehicle_lineup_sort_key(item):
     code = item.get("code") or ""
     wiki = wiki_catalog().get(str(code).casefold()) or {}
-    rating = vehicle_battle_rating(code, mode, group)
+    rating = mrank_to_br(item.get("mrank"))
     return (VEHICLE_CATEGORY_ORDER.get(wiki.get("category"), 4),
             rating is None, -rating if rating is not None else 0)
 
@@ -1161,6 +1192,9 @@ def add_battle_ratings(sid, data, connection):
     data["players"] = [player for player in players if not is_unjoined_player(player)]
     changed = len(data["players"]) != len(players)
     if recover_missing_lineups(sid, data["players"]):
+        changed = True
+    if (not data.get("start_utc") or str(data["start_utc"])[:10] >= "2026-11-11") \
+            and recover_cached_mranks(sid, data["players"]):
         changed = True
     if not (mode and group):
         for row in connection.execute("SELECT data FROM pages WHERE query LIKE 'api:%' ORDER BY fetched DESC"):
@@ -1202,9 +1236,16 @@ def add_battle_ratings(sid, data, connection):
             connection.execute("UPDATE match_stats SET data=? WHERE sid=?", (payload, sid))
     for player in data.get("players", []):
         configured = player.get("configured") or []
-        configured.sort(key=lambda item: vehicle_lineup_sort_key(item, mode, group))
-        ratings = [vehicle_battle_rating(item.get("code"), mode, group) for item in configured]
-        player["max_br"] = max(ratings) if ratings and all(value is not None for value in ratings) else None
+        configured.sort(key=vehicle_lineup_sort_key)
+        ratings = [mrank_to_br(item.get("mrank")) for item in configured]
+        if ratings and all(value is not None for value in ratings):
+            player["max_br"] = max(ratings)
+        elif (data.get("start_utc") and str(data["start_utc"])[:10] < "2026-11-11"
+              and isinstance(player.get("max_br"), (int, float))):
+            # Preserve an already cached pre-update rating; do not recalculate it.
+            pass
+        else:
+            player["max_br"] = None
     players = data.get("players") or []
     participants = [player for player in players
                     if is_real_player(player) and has_participation_evidence(player)]
@@ -1289,7 +1330,7 @@ def match_statistics(session: str):
     with db() as connection:
         data = add_battle_ratings(sid, data, connection)
         if not data.get("game_mode") or not data.get("battle_group"):
-            raise HTTPException(422, "无法确认对局模式，不能选择正确的 Wiki 权重列。")
+            raise HTTPException(422, "无法确认对局模式。")
         if not row:
             connection.execute("REPLACE INTO match_stats VALUES (?,?,?)",
                                (sid, json.dumps(data, ensure_ascii=False), time.time()))
